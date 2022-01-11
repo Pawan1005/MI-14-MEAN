@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, Initial scale=1.0">
+        <title> Table 1 </title>
+        <style>
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                margin-left: auto; 
+                margin-right: auto;
+                font-size: 30px;
+            } 
+            th,td{
+                padding: 7px;
+            }
+            caption{
+                font-family:'Courier New', Courier, monospace;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>A test table with merged cells</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2"> Average </th>
+                <th rowspan="2">Red Eyes</th>
+            </tr>
+            <tr>
+                <th colspan="1"> height</th>
+                <th> weight</th>
+            </tr>              
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </table>
+    </body>
+</html>
