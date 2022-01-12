@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form1</title>
+    <style>
+        h1 {
+            background-color: gray;
+            text-align: right;
+        }
+
+        h2 {
+            background-color: gray;
+            text-align: right;
+        }
+
+        .submit {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>MI-14 Intern HTML Assesment</h1><br>
+        <hr>
+        <div class="hed1">
+            <h2>Personal Detail</h2>
+        </div>
+
+        <legend></legend>
+        <label for="input"><b>First Name:</b></label>
+        <input type="text" placeholder="First Name" name="fname"><br><br>
+        <label for="input"><b>Last Name:</b></label>
+        <input type="text" placeholder="Last Name" name="lname"><br><br>
+        <label for="select"><b>Gender:</b></label>
+        <input type="radio" name="gender">
+        <label for="radio">Male</label>
+        <input type="radio" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" name="gender">
+        <label for="other">Other</label><br><br>
+        <label for="age"> <b> Age:</b></label>
+        <input type="radio" name="age">
+        <label for="less">less than 18</label>
+        <input type="radio" name="age" checked>
+        <label for="18">18-25</label>
+        <input type="radio" name="age">
+        <label for="">26-40</label><br><br>
+
+        <h2>Academic Details</h2>
+        <label for=""><b> Skill Set:</b></label>
+        <input type="checkbox">
+        <label for="">HTML</label>
+        <input type="checkbox">
+        <label for="">Java Script</label>
+        <input type="checkbox">
+        <label for="">Java</label>
+        <input type="checkbox">
+        <label for="">Oracle</label>
+
+        <h2>Professional Details</h2>
+        <fieldset>
+            <legend>Academic Details</legend>
+            <label for=""><b>Skill
+                    Set:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox">
+            <label for="">HTML
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox">
+            <label for="">Java Script
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox">
+            <label for="">Java
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox">
+            <label for="">Oracle</label><br><br><br>
+
+
+
+            <label for=""><b>Highest Qualification: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <select name="sel" id="qualification">
+                <option value="">Please select one</option>
+                <option value="">Diploma in Computer Science</option>
+                <option value="">Science Graduate</option>
+                <option value="">Bachelor in Engg.</option>
+                <option value="">Masters in Computer Science</option>
+                <option value="">Masters in Engg.</option>
+                <option value="">Other</option>
+            </select><br><br><br>
+
+            <label
+                for=""><b>University:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="text" list="University" placeholder="select University">
+            <datalist id="University">
+
+                <option value="Mumbai University">
+                <option value="Chennai University">
+                <option value="Nagpur University">
+                <option value="Badoda University">
+            </datalist><br><br><br>
+            <span>
+                <label for=""><b>Area of
+                        Expertise:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+
+                <select name="interesr" id="">
+
+                    <option for="">Software</label>
+                    <option for="">Training</label>
+                    <option for="">Networking</label>
+                    <option for="">Manavement</label>
+                    <option for="">Marketing</label>
+                </select>
+
+            </span>
+
+        </fieldset><br>
+        <fieldset>
+            <legend>Resume</legend>
+            <label for=""><b>Upload Resume:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="file">
+            <br><br><br>
+
+            <label><b>Comments
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <textarea name="message"></textarea><br><br>
+        </fieldset><br>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
