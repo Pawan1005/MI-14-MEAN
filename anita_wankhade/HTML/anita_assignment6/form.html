@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatiable" content="IE=edge">
+        <meta name="viewport" content "width-device-width, Initial scale=1.0">
+        <title> From</title>
+        <link rel="stylesheet" href="fstyle.css">
+        </head>
+        <style>
+                body 
+                {
+                      background-color: coral;
+                    }
+                    </style>
+            <from action="action.php" method="get">
+                <fieldset>
+                    <h1 text align="right">MI-9 Intern HTML Assesment</h1><br>
+                    <legend>Contact From</legend>
+                    <h2 text align="right"> Personal Details</h2><br>
+                <label>First Name:-</label>
+                <input type="text" name="fname" value=""><br> <br>
+                <label>Last Name:-</label>
+                <input type="text" name="Iname" value=""><br><br>
+                <label>Gender:-</label>
+                <input type="radio"id="male" name="gender" value="male"><label>male</label>
+                <input type="radio"id="female" name="gender" value="female"><label>female</label><br><br>
+                <label>Age:-</label>
+                <input type="radio"id="less than 18" name="Age" value="less than 18"><label>less than 18</label>
+                <input type="radio"id="18-25" name="Age" value="18-25"><label>18-25</label>
+                <input type="radio"id="18-25" name="Age" value="18-25"><label>26-40</label><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Skill</legend>
+                    <h3 text align="right">Academic Details</h3><br>
+                <label>Skill Set:-</label>
+                <input type="checkbox"id="HTML" name="Skill Set" value="HTML"><label>HTML</label>
+                <input type="checkbox"id="Java Script" name="Skill Set" value="Java Script5"><label>Java Script</label>
+                <input type="checkbox"id="Java" name="Skill Set" value="Java"><label>Java</label>
+                <input type="checkbox"id="Oracle" name="Skill Set" value="Oracle"><label>Oracle</label><br><br>
+                <form action="/action_page.php">
+                    <label for="Hightest Qualification">Hightest Qualification:</label>
+                    <select id="Hightest Qualification" name="Hightest Qualifications">
+                      <option value="Master in computer">Master in computer</option>
+                      <option value="MBA">MBA</option>
+                      <option value="BCA">BCA</option>
+                      <option value="BTC">BTC</option>
+                    </select><br><br>
+                <label>University:-</label>
+                <textarea name="University"></textarea><br><br>
+                <label>Areas of Expertise:-</label>
+               <input list="Areas of Expertise">
+                <datalist id="Areas of Expertise">
+                    <option value="Software"></option>
+                    <option value="Training"></option>
+                    <option value="Networking"></option>
+                    <option value="Management"></option>
+                </datalist><br>
+                </fieldset><br>
+                <fieldset>
+                <legend>Resume</legend>
+                <label for="my file">Upload Resume:-</label>
+                <input type="file" id="my file" name="my file"><br><br>
+                <label>Comments:-</label>
+                <textarea name="Comments"></textarea><br>
+                <span text align="center">
+                    <div class="center">
+                <input type="submit" name="Submit">
+                </div>
+                </span>
+            </fieldset>
+        </from>
+    </body>
+</html>
