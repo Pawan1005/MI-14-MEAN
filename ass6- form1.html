@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, Initial scale=1.0">
+        <title> Student Detail Form-1</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div>
+                <h2>MI-9 Intern HTML Assesment </h2>
+            </div><br>
+            <hr>
+            <h3>Personal Details</h3>
+                <form action="action.php" method="post">
+                    <label><b>First Name</b> :</label>
+                    <input type="text" name="fname" placeholder="First Name"><br>
+                    <label><b>Last Name</b> :</label>
+                    <input type="text" name="lname" placeholder="Last Name"><br><br>
+                    <label><b>Gender</b> :</label>
+                    <input type="radio" id="male" name="gender" value="male"><label>Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label>Female</label>
+                    <input type="radio" id="other" name="gender" value="other"><label>Other</label><br><br><br>
+                    <label><b>Age</b> :</label>
+                    <input type="radio" id="lessthan18" name="age" value="lessthan18"><label>Less than 18</label>
+                    <input type="radio" id="18-25" name="age" value="18-25" checked><label>18-25</label>
+                    <input type="radio" id="26-40" name="age" value="26-40"><label>26-40</label><br><br>                  
+            <h3>Academic Details</h3>
+                    <label><b>Skill Set</b> :</label>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label> HTML </label>
+                    <input type="checkbox" id="css" name="css" value="CSS">
+                    <label> CSS </label>
+                    <input type="checkbox" id="js" name="js" value="JavaScript">
+                    <label> JavaScript </label>
+                    <input type="checkbox" id="oracle" name="oracle" value="Oracle">
+                    <label> Oracle </label>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label> Java </label>           
+                </form>
+        </div>
+    </body>
+</html>
