@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>form</title>
+         <link rel="stylesheet" href="form.css">
+    </head>
+         <h1>MI-9 intern HTML Assesment</h1>
+    <body>
+        <h2>Personal Details</h2>
+        <form action="action.php" method="post">
+            <label> <strong> First Name :- </strong></label>
+            <input type="text" name="fname"><br><br>
+
+            <label> <strong>Last Name :- </strong></label>
+            <input type="text " name="lname"><br><br>
+            <label> <strong>Gender :- </strong></label>
+            <input type="radio" id="male" name="gender">
+            <label>male</label>
+            <input type="radio" id="female" name="gender">
+            <label>female</label>
+            <input type="radio" id="other" name="gender">
+            <label>other</label><br><br>
+            <label><strong>Age :- </strong></label>
+            <input type="radio" id="less than 18" name="age">
+            <label>less than 18</label>
+            <input type="radio" id="18-25" name="age" value="18-25" checked>
+            <label>18-25</label>
+            <input type="radio" id="26-40"  name="age">
+            <label>26-40</label>
+        <h2>Academic Details</h2> 
+            <label> <strong>Skill Test :- </strong></label>  
+            <input type="checkbox" name="HTML">
+            <Label>HTML</Label>
+            <input type="checkbox" name="Java Script">
+            <label>Java Script</label>
+            <input type="checkbox" name="Java">
+            <label>Java</label>
+            <input type="checkbox" name="Oracle">
+            <label>Oracle</label><br>
+        <h2>Professional Details</h2>
+            <fieldset>
+                <legend>Academic Details</legend>
+                <label> <strong>Skill Test :- </strong></label>  
+                <input type="checkbox" name="HTML">
+                <Label>HTML</Label>
+                <input type="checkbox" name="Java Script">
+                <label>Java Script</label>
+                <input type="checkbox" name="Java">
+                <label>Java</label>
+                <input type="checkbox" name="Oracle">
+                <label>Oracle</label><br> <br>
+                <label><strong> Highest Qualification :-</strong></label>
+                <input list="Highest Qualification" name="Highest Qualification">
+                <datalist id="Highest Qualification">
+                    <option value="Diploma in Computer SCience"></option>
+                    <option value="Science Graduate "></option>
+                    <option value="Bachelor in Engg."></option>
+                    <option value="Masters in Computer Science"></option>
+                    <option value="Masters in Engg. "></option>
+                    <option value="Other"></option><br>
+                </datalist><br><br>
+                <label > <strong>University :-</strong></label>
+                <input list="University" name="University">
+                <datalist id="University">
+                    <option value="Mumbai University"></option>
+                    <option value="Pune University"></option>
+                    <option value="Chennai University"></option>
+                    <option value="Nagpur University"></option>
+                    <option value="Baroda University"></option>
+                </datalist><br><br>
+                <label><strong>Areas of Expertise :-</strong></label>
+                <input list="Areas of Expertise" name="Areas of Expertise">
+                <datalist id="Areas of Expertise">
+                    <option value="Software "></option>
+                    <option value="Training "></option>
+                    <option value="Networking "></option>
+                    <option value="Management "></option>
+                    <option value="Marketing "></option>
+                </datalist><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Resume</legend>
+                <label for="my file">Upload resume :-</label>
+                <input type="file" id="my file" name="my file"><br><br>
+                <label>Comments :-</label>
+                <textarea name="comments"></textarea><br>
+                <span text-align= "center">
+                    <div class="center">
+                <input type="submit"  name="submit">
+                    </div>
+            </fieldset>
+        </form>
+    </body>
+</html>  

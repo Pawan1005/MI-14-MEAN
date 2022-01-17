@@ -1,0 +1,67 @@
+.main1{
+    background-color:lavender;
+    font-family: Arial, Helvetica, sans-serif;
+    height:530px
+}
+h2{
+    background-color:rgb(163, 155, 226);
+    font-size: 22px;
+    text-align: right;
+    padding: 7px;
+}
+h3{
+    background-color:rgb(163, 155, 226);
+    font-size: 22px;
+    font-style: italic;
+    text-align: right;
+    padding: 7px;
+}
+.main2{
+    background-color:lavender;
+    font-family: Arial, Helvetica, sans-serif;
+    height:1080px
+}
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+input[type=text]:focus {
+    background-color:navajowhite;
+}
+label{
+    width: 10%;
+    display: inline-block;
+}
+.main3>label{
+    width: 15%;
+    display: inline-block;
+}
+legend{
+    font-size: 20px;
+    color:crimson;
+    margin-bottom: 10px;
+}
+input[type=submit] {
+    width: 10%;
+    margin-left:45%;
+    margin-top: 2%;
+    background-color:lightseagreen;
+    border: none;
+    color:black;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color:red;
+}
+textarea{
+    width: 15%;
+    height: 80px;
+}
+button[id=files]{
+    width: 100px;
+}

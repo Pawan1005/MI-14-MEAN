@@ -1,0 +1,20 @@
+h1,h2{
+    background-color: dodgerblue;
+    text-align: right;
+    font-family: italic;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chocolate
+    
+}
+h1{
+    border-bottom: solid black;
+}
+.center{
+    text-align: center;
+    
+}
+legend{
+    color: indigo;
+}
