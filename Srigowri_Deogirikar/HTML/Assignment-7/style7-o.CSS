@@ -1,0 +1,342 @@
+
+
+
+*{
+  margin:0;
+  padding:0;
+  background-color:whitesmoke;
+
+}
+
+:root{
+  --orange:#ffa500;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+}
+
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background:#333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 9%;
+}
+
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+header .logo span{
+  color:var(--orange);
+}
+
+header .navbar a{
+  color:#fff;
+  font-size: 2rem;
+  margin:0 .8rem;
+}
+
+header .navbar a:hover{
+  color:var(--orange);
+}
+
+header .icons i{
+  font-size: 2.5rem;
+  color:#fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover{
+  color:var(--orange);
+}
+
+body{
+
+
+  height: 700px;
+  overflow:auto;
+}
+
+
+
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+.container-fluid{
+  width:100%;
+  height:100%;
+
+}
+
+
+
+
+
+
+#nav-bar
+{
+  position:left;
+  top:0;
+  z-index:10;
+
+}
+.navbar-brand img
+{
+
+height:80px;
+
+padding-left:30px;
+}
+.navbar-nav li{
+  padding:0 10px;
+}
+.navbar-nav li a{
+  float:right;
+  text-align:left;
+}
+
+.nav-item{
+  border:1px solid rgb(156, 156, 156);
+}
+.container1{
+
+  background-image:linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MjN8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80');
+ background-size:cover; 
+height:200px;
+width:100%;
+background-position:center;
+color:#efefef!important;
+background-attachment: fixed;
+padding-top:50px;
+padding-bottom:50px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.main1> p{
+
+  background-color:white;
+ height:500px;
+ width:500px;
+ position:fixed;
+  left:400px; 
+ margin-right:10px;
+ border-radius:5px;
+
+ padding:20px;
+ box-sizing: content-box;
+ 
+}
+.main2{
+
+  background-color:white;
+ height:350px;
+ width:250px;
+ position:fixed;
+  right:600px; 
+ margin-right:10px;
+ border-radius:5px;
+
+ padding:20px;
+ box-sizing: content-box;
+}
+
+.avatar {
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position:absolute;
+  top:-50px;
+    left:calc(50% - 50px);
+}
+
+
+#file{
+  padding-top:100px;
+  height:100px;
+  width:100px;
+}
+.button {
+ 
+  padding: 15px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4c6faf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position:relative;
+  margin-top :70%;
+
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.progress-bar{
+ 
+
+  width:200px;
+  height:100px;
+ }
+
+
+
+
+h4{
+ padding-left: 400px;
+
+}
+
+.main2> p{
+  margin-top:15%;
+}
+
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
