@@ -1,0 +1,27 @@
+img{
+    width: 1250px;
+    height: 1250px;
+    position: absolute;
+    filter: blur(3px);
+    margin-right: 5rem;
+}
+.main{
+    position: relative;
+    color: white;
+    /* border: 2px solid yellow; */
+    text-align: center;
+    padding: 5rem;
+}
+.box{
+    /* border: 2px solid red; */
+    padding: 10px;
+    width: 60%;
+    box-shadow: 1px 1px;
+}
+a button{
+    background-color:red;
+    color: white;
+    font-size: 15px;
+    padding: 0px 15px;
+
+}

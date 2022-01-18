@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-style: oblique;
+}
+main{
+    margin-left: 120px;
+}
+.photo{
+ 
+  padding: 8px;
+  width: 186px;
+  height: 127px;
+  float: left;
+  display: block;
+  
+  
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+body{
+    background-color: lightcoral;
+}
+img:hover{
+    transform: scale(2);
+    transition: .3s;
+}
