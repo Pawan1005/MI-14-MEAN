@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgba(0, 255, 255, 0.096);
+        }
+        .container {
+            background-color: rgb(191, 192, 192);
+            width: 80%;
+            height: auto;
+            margin: auto;
+        }
+        .header{
+            /* text-align: left; */
+            width: 100%;
+            background-color: rgba(159, 159, 161, 0.924);
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            
+            /* float: right; */
+            width: 100%;
+            margin-left: 5vh;
+        }
+        textarea{
+            height: 80px;
+        }
+        .submit{
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+        }
+        .submit{
+            text-align: center;
+        }
+    </style>
+    <div class="container">
+        <div class="header">
+            <h1 class="head">Create Resume</h1>
+        </div><br>
+        <hr>
+        <div class="header">
+            <h2 class="head">Personal Details</h2>
+        </div><br>
+        <div>
+            <label for="firstName">First Name :</label>
+            <input type="text" name="firstName" id="firstName"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="LastName">Middle Name :</label>
+            <input type="text" name="MiddleName" id="middleName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="LastName">Last Name :</label>
+            <input type="text" name="LastName" id="LastName"><br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="Male" id="Male">Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Female" id="female"> Female&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="Other" id="Other">Other
+            <br><br>
+            <label for="Age">Age :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="less18" id="less18">Less Than 18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="age2" id="age2" checked>18-25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="age3" id="age3">26-40 <br><br>
+            <label for="mail">Email : </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="header">
+            <h2 class="head">Professional Details</h2>
+        </div><br>
+        <div>
+           <fieldset>
+               <legend>Acadmic Details</legend>
+               
+            <label for="Skill">Skill Set :</label>
+            <input type="checkbox" name="html" id="">HTML
+            <input type="checkbox" name="JavaScript" id="">JavaScript
+            <input type="checkbox" name="Java" id="">Java
+            <input type="checkbox" name="Java" id="">Python
+            <input type="checkbox" name="Java" id="">React JS
+            <input type="checkbox" name="Java" id="">Node JS
+            <input type="checkbox" name="oracle" id="">Oracle <br><br>
+            <label for="high-qali">Post Graduation: </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="Deploma">MA</option>
+                <option value="Science">M.Com</option>
+                <option value="BE">MCA</option>
+                <option value="MCS">Master in Computer Science</option>
+                <option value="ME">Master in Engg.</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="expe">University : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="MU">Mumbai University</option>
+                <option value="PU">Pune University</option>
+                <option value="CU">Chennai University</option>
+                <option value="NU">Nagpur University</option>
+                <option value="BU">Badoda University</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="expe">Area Of Expertise : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="soft">Software</option>
+                <option value="net">Networking</option>
+                <option value="trainee">Training</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+                <option value="other">Other</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="pass-year">Passing Year</label>
+            <input type="number" name="passout" id="passout">
+            <label for="Marks">Percentage</label>
+            <input type="number" name="Marks" id="marks">
+
+            <input type="number" name="passout" id="passout">
+            <br><br><br><br> <label for="high-qali">Under Graduation: </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="Deploma">BA</option>
+                <option value="Science">B.Com</option>
+                <option value="BE">BCA</option>
+                <option value="MCS">Bachelor in Computer Science</option>
+                <option value="ME">Bachelor in Engg.</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="expe">University : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="MU">Mumbai University</option>
+                <option value="PU">Pune University</option>
+                <option value="CU">Chennai University</option>
+                <option value="NU">Nagpur University</option>
+                <option value="BU">Badoda University</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="expe">Area Of Expertise : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="soft">Software</option>
+                <option value="net">Networking</option>
+                <option value="trainee">Training</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+                <option value="other">Other</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="pass-year">Passing Year</label>
+            <input type="number" name="passout" id="passout">
+            <label for="Marks">Percentage</label>
+            <input type="number" name="Marks" id="marks">
+            <br>
+        </fieldset>
+        </div>
+        <br><br>
+        <div>
+            <fieldset>
+                <legend>Resume</legend>
+                <label for="Uplod-resume">Uplode Resume : </label>
+                <input type="file" name="Resume" id="resume">
+                <br><br>
+                <label for="comment">Comment: </label>
+                <textarea name="comment" form="usrform">Comment</textarea>
+            </fieldset>
+        </div><br>
+        <div class="submit">
+            <input type="submit" class="submit" value="Submit">
+        </div>
+    </div>
+</body>
+</html>

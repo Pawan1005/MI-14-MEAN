@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Job Portal</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Log-In</h1>
+        <div class="log-in">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <input type="submit" value="Submit">
+        </div><br>
+        <label class="label-btn" for="create" onclick="signUp()">Don't Have An Account</label><br>
+        <label class="label-btn" for="create">Forgot Password</label>
+    </div>
+    <div class="container1" id="container1">
+        <h1>Sign up</h1>
+        <div class="Sign Up">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last name..">
+
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="Email..">
+
+                <label for="lname">Birthdate</label>
+                <input type="date" id="lname" name="lastname" placeholder="Birthate">
+                
+                <label for="lname">Phone Number</label>
+                <input type="number" id="lname" name="lastname" placeholder="Phone Number">
+                
+                <label for="lname">Gender</label>
+                <select name="" id="">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+               <a href="Index.html"> <input type="submit" value="Sign Up"></a>
+        </div><br>
+        <label class="label-btn" for="create" onclick="signUp()">Alredy Have An Account</label><br>
+        <label class="label-btn" for="create" onclick="signUp()">Log In</label>
+    </div>
+    <h2 class="go-back"><a href="Index.html">Go To Home Page</a></h2>
+
+    <script>
+        let x = document.getElementById("container");
+        let y = document.getElementById("container1");
+
+        function signUp(){
+            // document.getElementById("container")=true;
+            // document.getElementById("container1").style.display="block";
+
+            if(x.style.display==="block"){
+                y.style.display="block";
+                x.style.display="none";
+            }
+            else{
+                y.style.display="none";
+                x.style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>

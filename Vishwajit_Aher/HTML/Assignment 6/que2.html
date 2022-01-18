@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form1</title>
+</head>
+<body>
+    <style>
+        .header{
+            text-align: right;
+        }
+        h1,h2{
+            background-color: rgba(81, 81, 197, 0.924);
+            /* float: right; */
+            width: 100%;
+        }
+        textarea{
+            height: 80px;
+        }
+        .submit{
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+        }
+        .submit{
+            text-align: center;
+        }
+
+    </style>
+    <div>
+        <div class="header">
+            <h1>MI-14 Mean HTML Assesment</h1>
+        </div><br>
+        <hr>
+        <div class="header">
+            <h2>Personal Details</h2>
+        </div><br>
+        <div>
+            <label for="firstName">First Name :</label>
+            <input type="text" name="firstName" id="firstName"><br><br>
+            <label for="LastName">Last Name :</label>
+            <input type="text" name="LastName" id="LastName"><br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="Male" id="Male">Male
+            <input type="radio" name="Female" id="female"> Female
+            <input type="radio" name="Other" id="Other">Other
+            <br><br>
+            <label for="Age">Age :</label>
+            <input type="checkbox" name="less18" id="less18">Less Than 18
+            <input type="checkbox" name="age2" id="age2" checked>18-25
+            <input type="checkbox" name="age3" id="age3">26-40
+        </div>
+        <div class="header">
+            <h2>Professional Details</h2>
+        </div><br>
+        <div>
+           <fieldset>
+               <legend>Acadmic Details</legend>
+               
+            <label for="Skill">Skill Set :</label>
+            <input type="checkbox" name="html" id="">HTML
+            <input type="checkbox" name="JavaScript" id="">JavaScript
+            <input type="checkbox" name="Java" id="">Java
+            <input type="checkbox" name="oracle" id="">Oracle <br><br>
+            <label for="high-qali">Highest Qualification: </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="Deploma">Deploma in Computer Science</option>
+                <option value="Science">Science Graduate</option>
+                <option value="BE">Bachelor in Engg.</option>
+                <option value="MCS">Master in Computer Science</option>
+                <option value="ME">Master in Engg.</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="expe">University : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="MU">Mumbai University</option>
+                <option value="PU">Pune University</option>
+                <option value="CU">Chennai University</option>
+                <option value="NU">Nagpur University</option>
+                <option value="BU">Badoda University</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="expe">Area Of Expertise : </label>
+            <select name="high-quali" id="highQual">
+                <option value="Select">Select</option>
+                <option value="soft">Software</option>
+                <option value="net">Networking</option>
+                <option value="trainee">Training</option>
+                <option value="Management">Management</option>
+                <option value="Marketing">Marketing</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+        </fieldset>
+        </div>
+        <br><br>
+        <div>
+            <fieldset>
+                <legend>Resume</legend>
+                <label for="Uplod-resume">Uplode Resume : </label>
+                <input type="file" name="Resume" id="resume">
+                <br><br>
+                <label for="comment">Comment: </label>
+                <textarea name="comment" form="usrform">Comment</textarea>
+            </fieldset>
+        </div><br>
+        <div class="submit">
+            <input type="submit" class="submit" value="Submit">
+        </div>
+    </div>
+    
+</body>
+</html>

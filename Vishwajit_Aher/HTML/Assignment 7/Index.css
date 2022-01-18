@@ -1,0 +1,206 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(218, 216, 216);
+  overflow: hidden;
+  height: 70px;
+  border-bottom: 1px solid #000;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  color: #000000;
+  text-align: right;
+  padding: 20px 56px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-item{
+  text-align: right;
+  float: right;
+  margin-top: 26px;
+  margin-right: 100px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h2{
+  float: left;
+  margin-left: 122px;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color: #ffffffa6;
+  color: rgb(0, 0, 0);
+}
+
+.menu{
+  background-color: rgba(36, 34, 34, 0.801);
+  width: 250px;
+  height: 420px;
+  margin-top: 330px;
+  color: white;
+  overflow: auto;
+}
+.menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.menu ul li {
+  color: white; 
+  font-size: larger;
+}
+.menu ul{
+  margin-right: 30px;
+}
+
+.profile{
+  width: 250px;
+  height: 680px;
+  background-color: rgb(185, 182, 178);
+  float: right;
+  margin-top: -680px;
+  text-align: center;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8d8d83; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.pro-user img{
+  width: 150px;
+}
+
+.bg-profile{
+  background-color: rgb(231, 230, 230);
+  width: 1270px;
+  height: 280px;
+  background-blend-mode: saturation;
+  
+  /* -webkit-filter: blur(2px); */
+  margin-right: 250px;
+  margin-top: -700px;
+  overflow: hidden;
+}
+
+.data-profile{
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+.data-profile input {
+  /* float: right; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  /* background: #ddd; */
+  font-size: 17px;
+  /* border: none; */
+  
+}
+
+.search {
+  border: 2px solid gray;
+}
+
+.search-btn{
+  background: rgb(255, 136, 0);
+  cursor: pointer;
+  border: none;
+}
+
+.popular {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  /* background-color: #000000; */
+  
+}
+
+.popular-jobs-row{
+  width: auto;
+  margin: auto;
+  height: auto;
+  padding: 10px 0 0px 0;
+  text-align: left;
+}
+
+.popular-jobs-row div{
+  width: 90%;
+  height: auto;
+  box-shadow: 0 0 5px 0 black;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+.popular-jobs-row div:hover{
+  box-shadow: 0 0 5px 0 rgba(228, 9, 9, 0.493);
+}
+
+.jobs-field{
+  /* background-color: coral; */
+  height: 415px;
+  width: 1020px;
+  margin-left: 250px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.col {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background-color: rgb(255, 255, 255);
+  margin: 40px;
+  box-shadow: 0 0 5px 0 black;
+}
+
+.col:hover{
+  box-shadow: 0 0 10px 2px rgb(116, 50, 50);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+.job-header{
+  margin-left: 25px;
+}
+
+.job-header .hr{
+  /* text-align: center; */
+  margin-top: -15px;
+  color: #555;
+}
+.posted{
+  text-align: right;
+}
+.job-header .view{
+  text-align: right;
+  margin-right: 50px;
+  
+}
