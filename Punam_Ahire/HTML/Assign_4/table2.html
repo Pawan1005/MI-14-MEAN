@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table tag</title>
+       <style>
+          h1{
+              text-align: center;
+              color: maroon;
+          }
+           table,th,td{
+                
+                 
+              margin-left: 500px;
+              margin-right: 500px;
+            background-color: grey;
+            border-style: ridge;
+            /*  border:1px solid black ;
+                border-collapse: collapse;*/
+                
+
+           }
+          th,td{
+    
+              border: 1px solid black;
+              padding: 5px;
+              border-collapse: collapse;
+           }
+           tr:nth-child(odd){
+             
+           }
+           th{
+               
+           }
+           </style>
+    </head>
+    
+    <body style="background-color: rgb(223, 86, 113);">  
+        <h1>A test table with merged cell:-</h1>
+        <table>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2"> Average</th>
+              
+                <th rowspan="2"> Red eyes</th>  
+                
+                         
+            </tr>
+          <tr>
+            
+            <th>Height</th>
+            <th>Weight</th> 
+            
+          </tr>
+            <tr>
+                   <td>Males</td>
+                   <td>1.9</td>
+                   <td>0.003</td>
+                   <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+            
+        </table>
+   </body>
+</html> 
