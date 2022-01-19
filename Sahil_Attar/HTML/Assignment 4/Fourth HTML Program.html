@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+    <style>
+        table, th{
+            border: 2px solid black;
+            border-radius: 5px;
+            /* border-collapse: collapse; */
+            padding: 5px;
+        }
+        td{
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        .hght2{
+            height: 5px;
+        }
+        .hght1{
+            height: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3><i>A Test table with merged cells</i></h3>
+   <table>
+    <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red eyes</th>
+    </tr>
+    <tr>
+        <td>height</td>
+        <td>weight</td>
+    </tr>
+    <tr>
+        <td>Males</td>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+    </tr>
+    <tr>
+        <td>Females</td>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+    </tr>
+   </table> 
+   <h2>Jan's Spring Term Afternoon Schedule</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>1:00</td>
+            <td rowspan="2">Office</td>
+            <td></td>
+            <td rowspan="2">Office</td>
+            <td rowspan="8"><center>Office <br> Hours <br> by Appt</center></td>
+            <td rowspan="2">Office</td>
+        </tr>
+        <tr>
+            <td>1:30</td>
+            <td rowspan="2">Dept Meeting</td>
+        </tr>
+        <tr>
+            <td>2:00</td>
+            <td rowspan="3">MAT 108</td>
+            <td rowspan="3">MAT 108</td>
+            <td rowspan="3">MAT 108</td>
+        </tr>
+        <tr>
+            <td>2:30</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3:00</td>
+            <td rowspan="3">EC Meeting</td>
+        </tr>
+        <tr>
+            <td>3:30</td>
+            <td rowspan="3">CSC 205</td>
+            <td rowspan="3">CSC 205</td>
+            <td rowspan="3">CSC 205</td>
+        </tr>
+        <tr>
+            <td>4:00</td>
+        </tr>
+        <tr>
+            <td>4:30</td>
+            <td></td>
+        </tr>
+    </table>
+<br>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>      
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topic</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a. m.</td>
+            <td rowspan="2">5:00 p. m.</td>
+            <td><center>Introduction to XML</center></td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a. m.</td>
+            <td>11:00 a. m.</td>
+            <td class="hght1">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a. m.</td>
+            <td>2:00 p. m.</td>
+            <td rowspan="2" class="hght2">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>2:00 p. m.</td>
+            <td>5:00 p. m.</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a. m.</td>
+            <td>12:00 p. m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+</body>
+</html>
