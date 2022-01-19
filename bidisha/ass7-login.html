@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+     <style>
+         body{
+             background-color: rosybrown;
+         }
+     </style>
+    <body>
+        <fieldset>
+            <legend><strong>Personal Details</strong></legend>
+            <form action="action.php" method="post">
+                <label>  First Name :- </label>
+                <input type="text" name="fname"><br><br>
+                <label> Last Name :- </label>
+                <input type="text " name="lname"><br><br>
+                <label>Mobile No.:-</label>
+                <input type="number" name="number"><br><br>
+                <label>Email:-</label>
+                <input type="email" name="email"><br><br>
+                <label> Gender :- </label><br>
+                <input type="radio" id="male" name="gender">
+                <label>male</label>
+                <input type="radio" id="female" name="gender">
+                <label>female</label>
+                <input type="radio" id="other" name="gender">
+                <label>other</label><br><br>
+        </fieldset>
+        <fieldset>
+                <legend><strong> Highest Qualification :-</strong></legend>
+                <label>Graduate :-</label>
+                <input list="Graduate" name="Graduate">
+                <datalist id="Graduate">
+                    <option value="Diploma in Computer SCience"></option>
+                    <option value="Science Graduate "></option>
+                    <option value="Bachelor in Engg."></option>
+                    <option value="Masters in Computer Science"></option>
+                    <option value="Masters in Engg. "></option>
+                    <option value="Other"></option><br>
+                </datalist>
+                <label>Passed Out:-</label>
+                <input type="number" name="number"><br><br>
+                <label>Grade:-</label>
+                <input type="text" name="text">
+                <label > University :-</label>
+                <input list="University" name="University">
+                <datalist id="University">
+                    <option value="Mumbai University"></option>
+                    <option value="Pune University"></option>
+                    <option value="Chennai University"></option>
+                    <option value="Nagpur University"></option>
+                    <option value="Baroda University"></option>
+                </datalist><br><br>        
+        </fieldset>
+        <fieldset>
+            <legend><strong>Experience</strong></legend>
+            <label>Company Name:-</label>
+            <input type="text" name="text">
+            <label>Time Period(in month):-</label>
+            <input type="number" name="number">
+            <label>Job Profile:-</label>
+            <input type="text" name="text">
+            <label>Currently Working:-</label>
+            <input type="radio" id="yes" name="Currently Working">
+            <label>Yes</label>
+            <input type="radio" id="no" name="Currently Working">
+            <label>No</label>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Areas of Interest :-</strong></legend>
+                <label for="Field"></label>
+                <input list="Field" name="Field">
+                <datalist id="Field">
+                    <option value="Software "></option>
+                    <option value="Core "></option>
+                    <option value="Networking "></option>
+                    <option value="Management "></option>
+                    <option value="Marketing "></option>
+                </datalist><br>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Uploads</strong></legend>
+            <label for="my file">Upload resume :-</label>
+                <input type="file" id="my file" name="my file"><br><br>
+                <label>Comments :-</label>
+                <textarea name="comments"></textarea><br>
+                <span text-align= "center">
+                    <div class="center">
+                <input type="submit"  name="submit">
+                    </div>
+        </fieldset>
+    </body>
+</html>
