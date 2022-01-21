@@ -1,0 +1,43 @@
+body{
+   background-image:url('https://i.pinimg.com/550x/d0/1c/69/d01c69925698e50dae5e8dbdaa11fa07.jpg');
+
+}
+h2{
+    color:brown;
+}
+
+.resume1{
+    background-color:palegoldenrod;
+    border:1px solid black;
+
+}
+
+.resumehead{
+    border:1px solid black;
+
+}
+.main> p{
+    background-color:rgb(216, 42, 144);
+   height:50px;
+   margin-right:10px;
+   border-radius:5px;
+   box-shadow:10px 10px 5px -2px;
+   padding:20px;
+}
+div> h3 {
+    text-align:right;
+
+}
+
+div> ul{
+    background-color:rgb(216, 42, 144);
+    height:50px;
+    margin-right:10px;
+    border-radius:5px;
+    box-shadow:10px 10px 5px -2px;
+    padding:20px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+}

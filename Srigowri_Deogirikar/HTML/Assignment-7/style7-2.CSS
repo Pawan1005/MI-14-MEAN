@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    
+}
+
+body{
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background: url('https://media.istockphoto.com/photos/laptop-notebook-tablet-and-coffee-on-work-desk-picture-id486763752');
+
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.container{
+    max-width:50%;
+    width:400px;
+    height:700px;
+    background:#fff;
+    padding:25px 30px;
+    border-radius:5px;
+}
+.continer .title{
+    font-size:25px;
+    font-weight:500;
+    position:relative;
+}
+.container .title::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:3px;
+    width:30px;
+    background:burlywood;
+}
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:20px 0 12px 0;
+}
+form .user-details .input-box{
+   margin-bottom:15px;
+    width:calc(100%/2-20px);
+}
+.user-details .input-box .details{
+    display:block;
+    font-weight:500;
+    margin-bottom:5px;
+}
+.user-details .input-box input{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding-left:15px;
+    font-size:16px;
+    border-bottom-width:2px;
+    transition :all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:burlywood;
+
+}
+form .gender-details .gender-title{
+    font-size:20px;
+    font-weight:500;
+}
+form .gender-details .category{
+    display:flex;
+    width:80%;
+    margin:14px 0;
+    justify-content:space-between;
+}
+.gender-details .category label{
+    display:flex;
+    align-items:center
+
+}
+
+form .button input{
+    background:burlywood;
+}
