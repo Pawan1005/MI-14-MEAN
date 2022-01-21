@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, Initial scale=1.0">
+        <title> Details Page</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            input[type=text], input[type=month] {
+                width: 67%;
+                padding: 10px 10px;
+                margin: 5px 5px;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                border-radius: 4px;
+            }
+            input[type=checkbox]{
+                width:20px;
+            }
+            label{
+                margin-left: 1px;
+                font-size:20px;
+                width: 21%;
+            }
+            .btn {
+                position: relative;
+                text-align:right;
+                background-color:blanchedalmond;
+                color: white;
+                display: inline-block;
+            }
+            .block {
+                text-align: justify;
+            }
+            .block1 {
+                position: relative;
+                box-sizing: border-box;
+                border-radius: 15px;
+                width: 1030px;
+                left: 145px;
+                display:inline-block;
+                text-align:justify;
+                background-color:whitesmoke;
+                
+            }
+            .block2 {
+                position: relative;
+                box-sizing: border-box;
+                border-radius: 15px;
+                width: 1200px;
+                left: 50px;
+                background-color:whitesmoke;
+                text-align: justify;
+                display: inline-block;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="maincontainer bg-primary bg-opacity-50">
+            <div class="leftcontainer">
+                <img class="img1 rounded-circle" src="images/job_logo.jpg" alt="job_logo">
+                    <ul class="middlemenu">
+                        <li><a href="main_page.html">Home</a></li>
+                        <li><a href="./details_page.html">Details</a></li>
+                        <li><a href="./prof_details.html">Professional Details</a></li>
+                        <li><a href="./contact_us.html">Contact Us</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <h1 style="text-align: center;"><em>Personal details</em></h1>
+                <div class="block1">
+                    <form>
+                        <label><b>First Name</b> :</label>
+                        <input type="text" name="fname" placeholder="First Name"><br><br>
+                        <label><b>Last Name</b> :</label>
+                        <input type="text" name="lname" placeholder="Last Name"><br><br>
+                        <label><b>Gender</b> :</label>
+                        <input type="radio" id="male" name="gender" value="male"><label>Male</label>
+                        <input type="radio" id="female" name="gender" value="female"><label>Female</label>
+                        <input type="radio" id="other" name="gender" value="other"><label>Other</label><br><br><br>
+                        <label><b>Age</b> :</label>
+                        <input type="radio" id="lessthan18" name="age" value="lessthan18"><label>Less than 18</label>
+                        <input type="radio" id="18-25" name="age" value="18-25" checked><label>18-25</label>
+                        <input type="radio" id="26-40" name="age" value="26-40"><label>26-40</label><br><br>  
+                    </form>
+                </div><br><br>
+                <h1 style="text-align: center;"><em>Academic details</em></h1>
+                    <div class="block2">  
+                        <form><br><br>
+                            <label><b>Academic Qualification</b> :</label>
+                            <select name="qualification" id="qualification" style="width: 28%;">
+                                <option disabled value>Select an option</option>
+                                <option>Diploma in Computer Science</option>
+                                <option>BSc Computer Science</option>
+                                <option>BCA</option>
+                                <option>B.E. Computer Science</option>
+                                <option>B.Tech</option>
+                                <option value="Other"></option>
+                            </select><br><br>
+                            <label><b>University</b>:</label>
+                            <input type="text" id="university" name="university" placeholder="Enter University Name"><br/><br>
+                            <label><b>Passing Year </b>:</label>
+                            <input type="month" id="pass" name="pass"><br><br><br>
+                            <label><b>Skill Set</b> :</label>
+                            <input type="checkbox" id="html" name="html" value="HTML">
+                            <label> HTML </label>
+                            <input type="checkbox" id="css" name="css" value="CSS">
+                            <label> CSS </label>
+                            <input type="checkbox" id="js" name="js" value="JavaScript">
+                            <label> JavaScript </label>
+                            <input type="checkbox" id="oracle" name="oracle" value="Oracle">
+                            <label> Oracle </label>
+                            </form>
+                    </div>        <br><br><br>
+                     
+                    <div class="btn">
+                        <button type="button" class="continue"><a href="./prof_details.html">Continue</a></button>
+                    </div>
+        </div>
+        <footer class="text-center text-md-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/job_logo.jpg" class="rounded-circle" alt="job_logo" height="110px;" width="190px;">
+                        <p>
+                            Copyright &copy;All rights reserved <a href="http://jobssearch.in" target="_blank">JobsSearch</a></p>
+                    </div>
+        
+                    <div class="col-md-4">
+                        Connect with us <br><br>
+                        <a class="text-info" href="#"><i class="fa fa-facebook-official"></i> Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="text-info" href="#"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="text-info" href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                    </div>
+                    <div class="col-md-4">
+                        Links <br><br>
+                        <a class="text-primary" href="./main_page.html">Home</a><br>
+                        <a class="text-primary" href="./details_page.html"></i>Details</a><br>
+                        <a class="text-primary" href="./prof_details.html">Professional Details</a><br>
+                        <a class="text-primary" href="./contact_us.html">Contact us</a>
+                    </div>
+                </div>						
+            </div>
+        </footer>	
+    </body>
+</html>
