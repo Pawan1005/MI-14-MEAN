@@ -1,0 +1,28 @@
+.xx{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    border: 2px solid black;
+    
+    
+  
+}
+
+.box{
+    border: 2px solid black;
+    width: 400px;
+    position: relative;
+    top:0%;
+    background-color:rgb(103, 140, 141);
+    margin-top: 7rem;
+    padding: 30px 0px 30px 0px;
+    box-shadow: 2px 2px;
+    
+ 
+}
+img{
+    width: 100%;
+    filter: blur(2px);
+}
+
+
