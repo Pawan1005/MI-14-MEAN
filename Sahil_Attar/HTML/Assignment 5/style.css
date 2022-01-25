@@ -1,0 +1,60 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px;
+    padding: 15px;
+    border: 2px solid black;
+}
+h1 {
+    background-color: yellow;
+}
+.AM{
+    right: 0%;
+    text-align: right;
+    align-items: flex-end;
+    font-size: 28px;
+    font-weight: bolder;
+}
+fieldset{
+    border: none;
+}
+
+
+.one p{ 
+    box-shadow: 10px 10px 8px -3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: orangered;
+}
+
+.MAM{
+    right: 0%;
+    text-align: right;
+    align-items: flex-end;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.two ul{ 
+    box-shadow: 10px 10px 8px -2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: orangered;
+    list-style-type: none;
+}
+
+.two ul li a{
+    text-decoration: none;
+}
