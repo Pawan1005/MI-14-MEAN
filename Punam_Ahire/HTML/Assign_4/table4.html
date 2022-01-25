@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table tag</title>
+       <style>
+          h1{
+              text-align: center;
+              color: maroon;
+          }
+           table,th,td{
+                
+                 
+              margin-left: 500px;
+              margin-right: 500px;
+            
+         /*    border:1px solid black ;
+                border-collapse: collapse;*/
+                border-style: ridge;
+                
+
+           }
+          th,td{
+    
+            
+
+              padding: 5px;
+              border-collapse: collapse;
+           }
+           tr:nth-child(odd){
+             
+           }
+           th{
+               
+           }
+           </style>
+    </head>
+    
+    <body style="background-color: rgb(107, 221, 221);">  
+
+        <table>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+                
+                
+                
+            </tr>
+          <tr>
+              
+            
+              <th colspan="2">Schedule</th>
+             <th rowspan="2">Topic</th>
+            
+          </tr>
+         <tr>
+             
+             <th>Begin</th>
+             <th>End</th>
+         </tr>   
+         <tr>
+             <td rowspan="2">Monday</td>
+             <td rowspan="2" style="background-color:rgb(228, 192, 102)">8.00 am</td>
+             <td rowspan="2" style="background-color: cornflowerblue;">5.00 pm</td>
+             <td >Introduction to XML</td>
+             
+         </tr>
+         <tr>
+             
+            <td>validity DTD And RelaxNG</td>
+         </tr>
+         <tr>
+             <td rowspan="3">Tuesday</td>
+             <td style="background-color:rgb(228, 192, 102)">8.00 am</td>
+             <td style="background-color: rgb(228, 192, 102)">11.00 am</td>
+             <td>X Path</td>
+             
+             
+             
+         </tr>
+         <tr>
+             <td style="background-color: rgb(228, 192, 102)">11.00 am</td>
+             <td  style="background-color: rgb(32, 133, 32)">2.00 pm</td>
+             <td rowspan="2">XSL Transformation</td>
+         </tr>
+         
+         <tr>
+             <td style="background-color: rgb(32, 133, 32);">2.00 pm</td>
+             <td  style="background-color: cornflowerblue;">5.00 pm</td>
+
+         </tr>
+         <tr>
+             <td>Wednesday</td>
+             <td style="background-color: rgb(228, 192, 102);">8.00 am</td>
+             <td style="background-color: rgb(32, 133, 32)">12.00 am</td>
+             <td>XSL Fprmating object</td>
+         </tr>
+        </table>
+   </body>
+</html> 

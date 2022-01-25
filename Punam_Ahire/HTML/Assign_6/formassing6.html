@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Form </title>
+      <!--  <link rel="stylesheet" href="style1.css">-->
+      <style>
+        h2{
+            background-color: rgb(155, 94, 212);
+            border: 1px solid black;
+            text-align: right;
+        }
+        .submit{
+                  text-align: center;
+        }
+        body{
+            background-color: beige;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <div class="head1">
+             <h2>MI-14- Intern HTML Assenment</h2>
+        </div>
+         <form action="action.php" method="get">
+              <fieldset >
+                   <legend>Person detailes</legend>
+              
+                        <label id="fname" >First Name :- </label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label id="lname" >Last Name :- </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label id="gender" >Gender :- </label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label id="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label id="female">Female</label><br><br>
+                        <label id="age" >Age :- </label>
+                        <input type="radio" id="less18" name="age" value="less18">
+                        <label id="less18">Less than 18</label>
+                        <input type="radio" id="1825" name="age" value="1825">
+                        <label id="1825">18-25</label>
+                        <input type="radio" id="2640" name="age" value="2640">
+                        <label id="2640">26-40</label>
+              
+              </fieldset>
+              <div class="head1">
+                <h2>Acadamic Detailes </h2>
+             </div>
+             <fieldset>
+                 <legend>Acadamic Detailes </legend>
+                       <label id="skillset">Skill set :- </label>
+                       <input type="checkbox" id="html" name="html" value="html">
+                       <label id="html">HTML</label>
+                       <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                       <label id="javascript">Java Script</label>
+                       <input type="checkbox" id="java" name="java" value="java">
+                       <label id="java">java</label>
+                       <input type="checkbox" id="oracal" name="oracal" value="oracal">
+                       <label id="oracal">Oracal</label><br><br>
+                   
+                       
+                   <label id="high_qul">Highest Qualification :-</label>
+                      
+                   <select id="qul" name="qul">
+                    
+                      <option value="value1">Diploma in Computer Science</option> 
+                      <option value="value2">Science Graduate</option>
+                      <option value="value3">Bachelor in Engg.</option>
+                      <option value="value4">Masters in Computer Science</option>
+                      <option value="value5">Masters in Engg.</option>
+                      <option value="value6">Other</option>
+                  
+                 </select> <br><br>
+                 
+                 <label id="uni">University is a datalist :-</label>
+                 <input list="list" name="list" >    
+                 <datalist id="list">                  
+                    <option value="Mumbai University">
+                    <option value="Pune University"></option>
+                    <option value="Chennai University"></option>
+                    <option value="Nagpur University"></option>
+                    <option value="Badoda University"></option>
+                    
+                </datalist><br><br>
+
+                <label id="area" >Areas of Expertise :-</label>
+                    
+               <select name="list1" id="list1">                  
+                   <option value="Software">Software</option>
+                   <option value="Training">Training</option>
+                   <option value="Networking">Networking</option>
+                   <option value="Mangment">Mangment</option>
+                   <option value="Marketing">Marketing</option>
+                   
+                </select>
+
+             </fieldset>
+              <fieldset>
+                  <legend>Resume</legend>
+                  <label id="resume" name="resme"> Uplode Resume:- </label>
+                   <input type="file" id="resume" name="myresume"> <br><br>
+                   <label id="comment">Comment :-</label>
+                   <textarea id="comment"></textarea>
+ 
+              </fieldset>
+              <div class="submit"> 
+                  <input type="button" value="submit"  name="submit" style="background-color: brown;">
+                </div>
+         </form>     
+   </body>
+
+</html> 
