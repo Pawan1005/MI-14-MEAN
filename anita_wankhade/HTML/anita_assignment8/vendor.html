@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wedding planner Agency</title>
+    <link rel="stylesheet" href="stylingh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+     * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<h2>Vendors Planner</h2>
+<p>Change image every 2 seconds:</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://media.gettyimages.com/photos/newlyweds-cutting-wedding-cake-picture-id1172231356?s=612x612" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://www.wallpapertip.com/wmimgs/180-1807866_wallpapers-indian-wedding-hd.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://lh3.googleusercontent.com/UHN0tzHmGTGZuEv7viQzJ4KtdtUa4e3BSYXs_ZhGyASnzidiiXWYIWTM-NWJ_GhzW9kIGCphRJKkKBkX6z6bRZyPCrE=w640-h400-e365-rj-sc0x00ffffff" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/655/034/new_large/shades3.jpg?1547020666" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+</div>
+<br>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</style>
+        <header>
+          <h1><a href="#" class="logo"Vendor Planner>Vendor Planner</a></h1>
+          <div class="topnav">
+              </div>
+              </header>
+              </section>
+              <section class="step-container">
+                <div class="step">
+                  <h1>Vendor Planner</h1>
+              </section>
+       
+            <!--vendor section start--->
+            <section class="vendor" id="vendor">
+              <div class="heading">
+                
+                <h2 style="text-align:center" style="color:rgb(0, 255, 115)"><span>Top Wedding Vendors<span></h2>
+                </div>
+                <div class="box-container">
+                  <div class="box">
+                    <img src="https://www.dulhaniyaa.com/assets/shaadistylists/images/slider1.jpg"  alt="" width="100%">
+                <div class="info">
+                  <h1>Dressing</h1>
+                  <p>A wedding planning and management of a client's wedding. Weddings are significant events</p>
+                  <input type="submit" value="learn more">
+                 </div>
+              </div>
+              <div class="box">
+                <img src="https://cosmopolitanevents.com.au/wp-content/uploads/2020/06/bride-and-groom-cutting-a-huge-5-layered-wedding-cake-3018810-1024x683.jpg"  alt="" width="100%">
+            <div class="info">
+              <h1>Wedding Cake</h1>
+              <p>A wedding planning and management of a client's wedding. Weddings are significant events</p>
+              <input type="submit" value="learn more">
+             </div>
+          </div>
+          <div class="box">
+            <img src="https://media.istockphoto.com/photos/everything-is-almost-finished-for-wedding-ceremony-picture-id1161558644?k=20&m=1161558644&s=612x612&w=0&h=V7J3za1qMG52rOiLSCibXCNaalAUkzqVg2OvzFBf_OI="  alt="" width="100%">
+        <div class="info">
+          <h1>Venu Hall</h1>
+          <p>A wedding  planning and management of a client's wedding. Weddings are significant events</p>
+          <input type="submit" value="learn more">
+         </div>
+      </div>
+      <div class="box">
+        <img src="https://media.istockphoto.com/photos/bride-and-groom-dancing-their-first-dance-picture-id1169564701?b=1&k=20&m=1169564701&s=170667a&w=0&h=mmAcJzFHBueErdRoxjOTy67merXXCsOgdp0Q395G58w="  alt="" width="100%">
+        <div class="info">
+        <h1>Music and Party</h1>
+        <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+        <input type="submit" value="learn more">
+      </div>
+     </div>
+     <div class="box">
+      <img src="https://media.istockphoto.com/photos/female-wedding-photographer-at-work-picture-id1144489433?k=20&m=1144489433&s=612x612&w=0&h=AuAFIxokhvAUMZ5gkAFzWwH46EG0cHr1Vg4nZ1DwL14="  alt="" width="100%">
+  <div class="info">
+    <h1>Photographer</h1>
+    <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+    <input type="submit" value="learn more">
+  </div>
+  </div>
+  </div>
+  </section>
+  </body>
+  </html>
