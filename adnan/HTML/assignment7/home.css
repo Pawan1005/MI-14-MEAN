@@ -1,0 +1,39 @@
+.main {
+  background: url(img0.jpg) no-repeat;
+  background-size: cover;
+  min-height: 95vh;
+  width: 100%;
+}
+.main1 {
+  text-align: center;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.btn2 {
+  height: 30px;
+  width: 100px;
+  background: gray;
+}
+.btn1,
+.btn0 {
+  height: 50px;
+  width: 100px;
+  background: gray;
+}
+h2 {
+  color: white;
+  padding-left: 20px;
+}
+h1 {
+  color: white;
+}
+.nav-link {
+  color: rgb(10, 10, 94);
+}
+.nav-link:hover {
+  color: red;
+  transition: 0.3s;
+}
+h4 {
+  color: blue;
+}
