@@ -1,0 +1,35 @@
+body {
+  border: 2px solid black;
+}
+.main {
+  background-color: rgb(144, 68, 243);
+  border: 1px solid black;
+}
+h1 {
+  text-align: center;
+  color: gold;
+}
+h3 {
+  text-align: right;
+}
+.links {
+  background-color: khaki;
+}
+.head {
+  border: 1px solid black;
+}
+.para > p {
+  background-color: cyan;
+
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px -2px;
+}
+div ul {
+  background-color: cyan;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px -2px;
+  padding: 20px;
+}
