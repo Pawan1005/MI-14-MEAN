@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wedding planner Agency</title>
+    <link rel="stylesheet" href="stylingh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+     * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://previews.123rf.com/images/artursz/artursz1803/artursz180301959/96785292-word-writing-wedding-planner-business-concept-for-marriage-preparation-written-on-sticky-note-paper-.jpg" style="width:100%">
+  <div  style="font-size: 30px"class="text"><mark>IT'S TIME TO CELEBRATE!!! THE BEST EVENT ORGANIZERS</mark></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://st1.photogallery.ind.sh/wp-content/uploads/indiacom/kerala-201711-1511526443.jpg" style="width:100%">
+  <div  style="font-size: 30px"class="text"><mark>IT'S TIME TO CELEBRATE!!! THE BEST EVENT ORGANIZERS</mark></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.unsplash.com/photo-1515715709530-858f7bfa1b10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMHBsYW5uZXJ8ZW58MHx8MHx8&w=1000&q=80" style="width:100%">
+  <div  style="font-size: 30px"class="text"><mark>IT'S TIME TO CELEBRATE!!! THE BEST EVENT ORGANIZERS</mark></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2017/12/25172535/Bride-groom-coordinate.jpeg" style="width:100%">
+  <div  style="font-size: 30px"class="text"><mark>IT'S TIME TO CELEBRATE!!! THE BEST EVENT ORGANIZERS</mark></div>
+</div>
+</div>
+<br>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</style>
+        <header>
+          <a href="#" class="logo">Wedding Planner</a>
+          <div class="topnav">
+            <a class="active" href="home">Home</a>
+              <a href="vendor.html">Vendor</a>
+              <a href="client.html">Client</a>
+              <a href="team.html">Team</a>
+              <a href="contactr.html">Contact</c>
+                <a href="event.html">Event</a>
+            </div>
+            </div>
+          </div>
+            </header>
+            </section>
+            <section class="step-container">
+              <div class="step">
+                <span>01</span>
+                <h1>Engagement</h1>
+                <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+                <input type="submit" value="learn more">
+              </div>
+              <div class="step">
+                <span>02</span>
+                <h1>Save The Date</h1>
+                <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+                <input type="submit" value="learn more">
+              </div>
+              <div class="step">
+                <span>03</span>
+                <h1>Wedding Ceremony</h1>
+                <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+                <input type="submit" value="learn more">
+              </div>
+            </section>
+            <!--vendor section start--->
+            <section class="vendor" id="vendor">
+              <div class="heading">
+                
+                <h2 style="text-align:center" style="color:rgb(0, 255, 115)"><span>Top Wedding Vendors<span></h2>
+                </div>
+                <div class="box-container">
+                  <div class="box">
+                    <img src="https://www.dulhaniyaa.com/assets/shaadistylists/images/slider1.jpg"  alt="" width="100%">
+                <div class="info">
+                  <h1>Dressing</h1>
+                  <p>A wedding planning and management of a client's wedding. Weddings are significant events</p>
+                  <input type="submit" value="learn more">
+                 </div>
+              </div>
+              <div class="box">
+                <img src="https://cosmopolitanevents.com.au/wp-content/uploads/2020/06/bride-and-groom-cutting-a-huge-5-layered-wedding-cake-3018810-1024x683.jpg"  alt="" width="100%">
+            <div class="info">
+              <h1>Wedding Cake</h1>
+              <p>A wedding planning and management of a client's wedding. Weddings are significant events</p>
+              <input type="submit" value="learn more">
+             </div>
+          </div>
+          <div class="box">
+            <img src="https://media.istockphoto.com/photos/everything-is-almost-finished-for-wedding-ceremony-picture-id1161558644?k=20&m=1161558644&s=612x612&w=0&h=V7J3za1qMG52rOiLSCibXCNaalAUkzqVg2OvzFBf_OI="  alt="" width="100%">
+        <div class="info">
+          <h1>Venu Hall</h1>
+          <p>A wedding  planning and management of a client's wedding. Weddings are significant events</p>
+          <input type="submit" value="learn more">
+         </div>
+      </div>
+      <div class="box">
+        <img src="https://media.istockphoto.com/photos/bride-and-groom-dancing-their-first-dance-picture-id1169564701?b=1&k=20&m=1169564701&s=170667a&w=0&h=mmAcJzFHBueErdRoxjOTy67merXXCsOgdp0Q395G58w="  alt="" width="100%">
+        <div class="info">
+        <h1>Music and Party</h1>
+        <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+        <input type="submit" value="learn more">
+      </div>
+     </div>
+     <div class="box">
+      <img src="https://media.istockphoto.com/photos/female-wedding-photographer-at-work-picture-id1144489433?k=20&m=1144489433&s=612x612&w=0&h=AuAFIxokhvAUMZ5gkAFzWwH46EG0cHr1Vg4nZ1DwL14="  alt="" width="100%">
+  <div class="info">
+    <h1>Photographer</h1>
+    <p>A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events</p>
+    <input type="submit" value="learn more">
+  </div>
+  </div>
+
+  <!---client section--->
+  <section class="client" id="client">
+    <div class="heading">
+      <h1>Our Previous Client</h1>
+      <img src="https://i.ytimg.com/vi/Q1Hiv6Zq3dc/maxresdefault.jpg" alt=""width="100%">
+    </div>
+    <div class="row">
+      <div clas="box-container">
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMHBsYW5uZXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""width="100%">
+          <div class="info">
+            <h3>01. Mark & Alice</h3>
+            <p><i class="fas fa-quate-left"></i>a wedding planner is professional who assists with the design , planing and management of a client wedding.
+             <i class="fas fa-quate-right"></i></p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://www.brides.com/thmb/iAVnhSA9pG5TnPWFuD-UH7PLxUs=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/sarah-thomas-wedding-25-19399999d2764fa7ad95a9e637d3bd69.jpg" alt="" width="100%">
+          <div class="info">
+            <h3>02. Mark & Alice</h3>
+            <p><i class="fas fa-quate-left"></i>a wedding planner is professional who assists with the design , planing and management of a client wedding.
+             <i class="fas fa-quate-right"></i></p>
+            </div>
+        </div>
+        <img src="images/divider.png" class="divider" alt="">
+        <div class="box">
+            <img src="https://christyhunter.com/wp-content/uploads/sites/8886/2019/08/tucson-wedding-photographer-ceremony-time-wedding-planning-tips_001.jpg" alt="" width="100%">
+            <div class="info">
+              <h3>03. Mark & Alice</h3>
+              <p><i class="fas fa-quate-left"></i>a wedding planner is professional who assists with the design , planing and management of a client wedding.
+               <i class="fas fa-quate-right"></i></p>
+          </div>
+          </div>
+          <div class="box">
+            <img src="https://i2.wp.com/thewishpost.com/wp-content/uploads/2020/05/beautiful-congratulations-happy-wedding-wishing-greetings-hd-images-pics-wallpaper-wishes-pictures-free-download.jpg" alt="" width="100%">
+            <div class="info">
+              <h3>04. Mark & Alice</h3>
+              <p><i class="fas fa-quate-left"></i>a wedding planner is professional who assists with the design , planing and management of a client wedding.
+               <i class="fas fa-quate-right"></i></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    <h3><mark>Find me on social media:</mark></h3><br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a><br><br>
+    <h3><mark>User Rating:</mark></h3>
+    <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star"></span>
+     <span class="fa fa-star"></span>
+    </section>
+    </section>
+  </body>
+</htm>
