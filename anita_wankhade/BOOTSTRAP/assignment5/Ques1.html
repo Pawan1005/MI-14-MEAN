@@ -7,109 +7,72 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<title>employees list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>job Portal</title>
 </head>
 <style>
     .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
+      background-color: #fdfafa;
     }
-    .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-  }
-    </style>
+</style>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#myPage">Logo</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
+          <a class="navbar-brand" href="#myPage" style="color:blue">Indeed</a>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#about">Find jobs</a></li>
+                <li><a href="#">Company Reviews</a></li>
+                <li><a href="#">Salary Guide</a></li> 
+                </ul></div></div>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#portfolio">LOGIN</a></li>
-              <li><a href="#pricing">PRICING</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="#">Post your resume</a></li>
+              <li><a href="#" style="color:blue" class="btn">Sign in</a></li>
+              <li><a href="#">Employers/Post job</a></li>
+              </ul>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="jumbotron text-center">
-        <h1>Job Portal</h1> 
+      <div class="jumbotron  text-center">
+        <h2></h2>
         <p>We specialize Job</p> 
         <form class="form-inline">
           <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-              <button type="button" class="btn btn-danger">Subscribe</button>
+            <input type="state" class="form-control" size="30" placeholder="job title, keywords, or company" required>
+        <div class="input-group-btn">
+              <button type="button" class="btn btn-primary"> <i class="fa fa-search"><a href="#"> Find jobs </a></i></button>
             </div>
           </div>
         </form>
       </div>
-      <div class="container-fluid text-center">
-        <h2>SERVICES</h2>
-        <h4>What we offer</h4>
-        <br>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>POWER</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>LOVE</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-lock logo-small"></span>
-            <h4>JOB DONE</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>GREEN</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>CERTIFIED</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4 style="color:#303030;">HARD WORK</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
-          </div>
-        </div>
-      </div>
-      
-      </body>
-      </html>
-      
+      <div class="container text-center">
+      <a href="#"  style="color:blue text-center" class="btn">Post your resume</a>-It only take a few seconds<br>
+      <a href="#"  style="color:blue text-center" class="btn">Employers: Post a job</a>-Your next hire is here
+     </div>
+     <h3 class="text-center">Popular searches</h3>
+     <div class="container text-center">
+         <button type="button" class="btn btn-secondary"> <i class="fa fa-search"></i> Government </button>
+         <button type="button" class="btn btn-secondary"> <i class="fa fa-search"></i> Online Typing</button>
+         <button type="button" class="btn btn-secondary"> <i class="fa fa-search"></i> Work From Home</button>
+         <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> Bank</button>
+         <button type="button" class="btn btn-secondary"> <i class="fa fa-search"></i> Delivery Executive</button><br><br>
+
+
+        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> Healthcare</button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> Online Tutoring</button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> Police</button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> Nursing</button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i> NGO</button>
+
+        
+        
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Career Advice Browser Job:  <a href="https://www.w3schools.com" title="Visit w3schools"> www.indeed.com</a></p>
+        </footer>
+    </body>
+</html>
