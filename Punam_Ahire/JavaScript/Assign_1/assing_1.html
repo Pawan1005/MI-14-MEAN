@@ -1,0 +1,58 @@
+<html>
+    <!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript </title>
+        
+    </head>
+    <body>
+        
+           <lable for="A" >A:</lable>
+           <input type="text" id="A">
+        
+        
+            <lable for ="B">B:</lable>
+            <input type="text" id="B">
+            
+        
+        <button type="button" onclick="swap1()">Method1</button>
+        <button type="button" onclick="swap2()">Method2</button>
+        <h3>With temprary variable</h3>
+        <p id="demo"></p>
+        <h3>Without temprary variable</h3>
+        <p id="demo1"></p>
+        
+       <script type='text/javascript'>
+
+            function swap1()
+            {
+           
+                var a=parseInt(document.getElementById("A").value);
+                var b=parseInt(document.getElementById("B").value);
+                    
+                 var c;
+                     c=a; //a=10 ,b=2 c=10
+                     a=b;  // a=2
+                     b=c;  //b=10
+                  
+                  document.getElementById("demo").innerHTML ="The after swaping: A= " +a+  " B=" +b; 
+                }
+           function swap2()
+            {
+           
+                var a=parseInt(document.getElementById("A").value);
+                var b=parseInt(document.getElementById("B").value);
+               
+                a = a + b;  //a=10;b=2; a=12;
+                b = a - b; //a=12 b=2; b=10;
+                a = a - b; //a=12; b=10; a=2;
+
+                document.getElementById("demo1").innerHTML ="The after swaping: A= " +a+  " B=" +b; 
+               
+           }
+        </script>
+    </body>
+</html>
