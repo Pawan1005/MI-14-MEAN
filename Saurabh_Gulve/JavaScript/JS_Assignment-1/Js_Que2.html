@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assign 1 Q2</title>
+        <style>
+            h2{
+                text-align: center;
+            }
+            p{
+                font-weight: bold;   /* also applies to o/p */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h2>Coversion of Celsius to Fahrenheit</h2>
+        Temp: <input id="first" placeholder="Enter Temp"><span> °C</span>&nbsp;&nbsp;
+        <button onclick="convert()">Convert to °F</button><br><br>
+        <p>After Conversion<span id="answer1"></span></p><br>
+        </div>
+        <script>
+            function convert(){
+            var a;
+            a=Number(document.getElementById("first").value);
+            let b=(a * 9/5)+32;
+            document.getElementById("answer1").innerHTML="<br><br>" + a + "°C equals to " +b+"°F";
+            }
+        </script>
+    </body>
+</html>
