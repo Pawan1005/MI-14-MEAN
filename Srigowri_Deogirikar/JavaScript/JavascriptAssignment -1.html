@@ -34,7 +34,7 @@
       document.getElementById("demo").innerHTML = A;
       var B=document.getElementById("B").value;
       document.getElementById("demo").innerHTML=B;
-      input.innerHTML+="<p>Original: "+A+", "+B+"</p>";
+      input.innerHTML+="<p>With Temporary Variable:<br>Original: "+A+", "+B+"</p>";
       let temp;
 temp = A;
 A= B;
@@ -44,7 +44,6 @@ B = temp;
 
 
 
-output1=document.getElementById('demo');
 
 
 output1.innerHTML="<p>Swapped: "+A+", "+B+"</p>";
@@ -54,11 +53,10 @@ function method1() {
       document.getElementById("demo").innerHTML = A;
       var B=document.getElementById("B").value;
       document.getElementById("demo").innerHTML=B;
-      let temp;
     
-    output2=document.getElementById('output2');
+   
 
-    output2.innerHTML+="<p>Original: "+A+", "+B+"</p>";
+    output2.innerHTML+="<p>Without temporary variable:<br>Original: "+A+", "+B+"</p>";
 
 B = [A, A = B][0];
 
