@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>celsius</title>
+        <style>
+            h2{
+                text-align: center;
+            }
+          </style>
+    </head>
+    <body>
+        <div>
+        <h2>Coversion of Celsius to Fahrenheit</h2>
+        Temp: <input id="first" placeholder="Enter Temp"><span> °C</span>
+        <button onclick="convert()">Convert to °F</button><br><br>
+        <p><b>After Conversion<span id="demo1"></span></b></p><br>
+        </div>
+        <script>
+            function convert(){
+            var a;
+            a=Number(document.getElementById("first").value);
+            let b=(a * 9/5)+32;
+            document.getElementById("demo1").innerHTML="<br><br>" + a + "°C equals to " +b+"°F";
+            }
+        </script>
+    </body>
+</html>
