@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, Initial scale=1.0">
+        <title> JavaScript Assignment 1</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1><center>Swap Two numbers</center></h1>
+
+        <label for="A">A: </label>
+        <input type="text" id="A" name="a" placeholder="">
+
+        <label for="B">B:</label>
+        <input type="text" id="B" name="b" placeholder="">
+        <button type="button" onclick="usingTempVariable()">Method1</button>
+        <button type="button" onclick="withoutUsingTempVariable()">Method2</button>
+
+        <h2>Method1: With Temperory variable</h2>
+        <p id="var"></p>
+        <h2>Method2: Without Temporary variable</h2>
+        <p id="fun"></p>
+
+
+        <h1><center>Conversion of Celcius to Fahrenheit</center></h1>
+
+        <label for="Temp">Temp: </label>
+        <input type="text" id="temp" name="c" placeholder="">
+        <label for="C">°C</label>
+        <button type="button" onclick="tempConversion()">Convert</button>
+
+        <h2>After Conversion</h2>
+        <p id="temp1"></p>
+
+
+        <script>
+            function usingTempVariable(){
+                var x = document.getElementById("A").value
+                var y = document.getElementById("B").value
+                var z = x
+                x = y
+                y = z
+                document.getElementById("var").innerHTML = "After Swapping (Method1): A: " + x +"  B: "+ y
+            }
+
+            function withoutUsingTempVariable(){
+                var x = document.getElementById("A").value
+                var y = document.getElementById("B").value
+                document.getElementById("fun").innerHTML = "After Swapping (Method2): A: " + y +"  B: "+ x
+            }
+
+            function tempConversion(){
+                var x = document.getElementById("temp").value
+                var res = (x * 9/5) + 32
+                document.getElementById("temp1").innerHTML = x + "°C is equal to " + res + "°F"
+            }
+            
+        </script>
+    </body>
+</html>
