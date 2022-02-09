@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignmnet 2-Q1</title>
+        <style>
+            p{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p>5 Numbers are:<span id="demo1"></span></p>
+        <p>The 2nd largest number is:<span id="demo2"></span></p>
+
+        <script>
+            const num = [50, 100, 65, 25, 10];
+            let len = num.length;
+            document.getElementById("demo1").innerHTML = "<br><br>" + "[" +num+ "]";
+            let c;
+            c=num.sort(function(a, b) 
+            { 
+                return b - a; })[1];
+            document.getElementById("demo2").innerHTML = "<br><br>" + c;
+        </script>
+    </body>
+</html>
