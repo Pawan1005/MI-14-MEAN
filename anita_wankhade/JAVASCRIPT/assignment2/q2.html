@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <style>
+            h2{
+                text-align: center;
+                background-color: aquamarine;
+            }
+            div{
+                text-align: center;
+            }
+        </style>
+        </head>
+        <body>
+            <h2>Student Result</h2>
+        <div>
+        <labal>Eng:-  </labal><input type="text" id="eng1"><br><br>
+        <label>Phy:-  </label><input type="text" id="eng2" ><br><br>
+        <label>Che:- </label><input type="text" id="eng3"><br><br>
+        <label>Bio:- </label><input type="text" id="eng4" ><br><br>
+        <label>Mat:-   </label><input type="text" id="eng5"><br><br>
+        
+        <button onclick="stud_marks()">Total Score</button>
+        <div id="getavg"></div>
+        </div>
+        <script>
+        function stud_marks() {
+                var eng = parseInt(document.getElementById('eng1').value);
+                var mat = parseInt(document.getElementById('eng2').value);
+                var phy = parseInt(document.getElementById('eng3').value);
+                var bio = parseInt(document.getElementById('eng4').value);
+                var che = parseInt(document.getElementById('eng5').value);
+                var total = eng + mat + phy +bio +che;
+                var percentage  = total*100/500; 
+                var grades;
+                if (percentage <= 100 && percentage >= 80)
+                { 
+                    grades = "A"; 
+                } 
+                else if (percentage <= 79 && percentage >= 60)
+                { 
+                    grades = "B"; 
+                } 
+                else if (percentage <= 59 && percentage >= 40)
+                { 
+                    grades = "C"; 
+                }
+                else
+                { 
+                    grades = "F"; 
+                } 
+                document.getElementById("getavg").innerHTML = "<br><b> Your Total Marks</b> : " +total+ "<br><br> <b>Your Percentage</b> : " +percentage+ " % " + "<br><br> <b>Your Grade</b> : " +grades;
+                }
+        </script>
+    </body>
+</html>
