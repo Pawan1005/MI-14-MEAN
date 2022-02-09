@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>swap</title>
+        <style>
+            h2{
+                text-align: center;
+            }
+          </style>
+    </head>
+    <body>
+        <div><h2>Swap Two Numbers</h2> 
+
+        A: <input id="first">
+        B: <input id="second">
+        <button onclick="swap()">Method1</button> <button onclick="swap1()">Method2</button>
+        <br></br><br>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        </div>
+        <script>
+                // Using Temporary Variable //
+            function swap(){
+                var a,b,temp;
+                a=Number(document.getElementById("first").value);
+                b=Number(document.getElementById("second").value);
+                document.getElementById('result1').innerHTML="Using Temporary Variable <br> Before Swapping : A= " + a + ",B= " +b; 
+                temp=a;
+                a=b;
+                b=temp;
+                document.getElementById("result2").innerHTML="After Swapping : A=  " +a+ ",  B=" +b;
+            }
+                // Without Using Temporary Variable //
+            function swap1(){
+                var x,y;
+                x=Number(document.getElementById("first").value);
+                y=Number(document.getElementById("second").value);
+                document.getElementById('result3').innerHTML="<br> Without Using Temporary Variable <br> Before Swapping : A= " + x + ",B= " +y;
+                [x,y]=[y,x];
+                document.getElementById("result4").innerHTML= "After Swapping : A=  " +x+ ",  B=" +y;
+            }
+        </script>
+    </body>
+</html>
