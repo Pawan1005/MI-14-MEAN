@@ -1,0 +1,87 @@
+<html>
+    <!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript </title>
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+          <h2 class="heading">Welcome </h2>
+          <form class="form was_validation">
+              <div class="form-group">
+                <lable>No1:</lable>
+                <input type="text" id="No1">
+              </div>
+              <div class="form-group">
+                <lable >No2:</lable>
+                <input type="text" id="No2">
+              </div>
+              <div class="form-group">
+                <lable >No3:</lable>
+                <input type="text" id="No3">
+              </div>
+              <div class="form-group">
+                <lable>No4:</lable>
+                <input type="text" id="No4">
+              </div>
+              <div class="form-group">
+                <lable>No5:</lable>
+                <input type="text" id="No5">
+              </div>
+
+              <button type="button" id="nextpage" onclick="largest()">submit</button>
+               <p id="demo1"></p>
+               <p id="demo2"></p>
+               <p id="demo3"></p>
+          </form>  
+          <script>
+              function largest()
+              {
+                    const arr=[ parseInt(document.getElementById("No1").value),
+                               parseInt(document.getElementById("No2").value),
+                               parseInt(document.getElementById("No3").value),
+                               parseInt(document.getElementById("No4").value),
+                               parseInt(document.getElementById("No5").value)];
+
+                     document.getElementById("demo1").innerHTML= "The no is"  +arr;
+                     let firstlarg =0;
+                     let secondlarg=0;
+
+                       for(let i=0; i<5; i++)
+                       {
+                           if (arr[i]> firstlarg)
+                               {
+                                      secondlarg= firstlarg;
+                                      firstlarg=arr[i];
+                               }
+                               else if (arr[i]> secondlarg)
+                               {
+                                   secondlarg=arr[i];
+                               }
+
+
+                       }
+                       document.getElementById("demo2").innerHTML= "The First largest no is " +firstlarg;
+
+                       document.getElementById("demo3").innerHTML= "The second largest no is " +secondlarg;
+
+
+             }
+
+        </script>
+    </body>
+</html>
