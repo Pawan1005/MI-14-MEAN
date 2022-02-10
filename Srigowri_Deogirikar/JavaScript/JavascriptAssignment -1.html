@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Javascript Assignment1</title>
+</head>
+<body>
+    <label for="A">A</label>
+    <input type="text" id="A" name="A" placeholder="">
+
+<label for="B">B</label>
+    <input type="text" id="B" name="B" placeholder="">
+  
+    <button onclick="method1('#p')">Method 1</button>
+    <button onclick="method2('#p')">Method 2</button>
+    <div id="input"></div>
+    <div id="output1"></div>
+    <p id="demo"></p>
+    <div id="output2"></div>
+  
+    
+
+   
+<script>
+   
+    
+    
+
+    function method2() {
+      var A = document.getElementById("A").value;
+      document.getElementById("demo").innerHTML = A;
+      var B=document.getElementById("B").value;
+      document.getElementById("demo").innerHTML=B;
+      input.innerHTML+="<p>With Temporary Variable:<br>Original: "+A+", "+B+"</p>";
+      let temp;
+temp = A;
+A= B;
+B = temp;
+
+
+
+
+
+
+
+output1.innerHTML="<p>Swapped: "+A+", "+B+"</p>";
+    }
+function method1() {
+      var A = document.getElementById("A").value;
+      document.getElementById("demo").innerHTML = A;
+      var B=document.getElementById("B").value;
+      document.getElementById("demo").innerHTML=B;
+    
+   
+
+    output2.innerHTML+="<p>Without temporary variable:<br>Original: "+A+", "+B+"</p>";
+
+B = [A, A = B][0];
+
+output2.innerHTML+="<p>Swapped: "+A+", "+B+"</p>";
+   
+    
+    
+    }
+    
+    </script>
+</body>
+</html>
