@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignmnet 2-Q2</title>
+    </head>
+    <body>
+        <h1>Enter Students Marks</h1>
+        <input type="text" id="s1" placeholder="Enter Sub1 Marks" maxlength="3"><br>
+        <input type="text" id="s2" placeholder="Enter Sub2 Marks" maxlength="3"><br>
+        <input type="text" id="s3" placeholder="Enter Sub3 Marks" maxlength="3"><br>
+        <input type="text" id="s4" placeholder="Enter Sub4 Marks" maxlength="3"><br>
+        <input type="text" id="s5" placeholder="Enter Sub5 Marks" maxlength="3"><br><br>
+        
+        <button onclick="stud_marks()">Check Score</button>
+
+        <div id="demo"></div>
+
+        <script>
+            function stud_marks() {
+                var sub1 = parseInt(document.getElementById('s1').value);
+                var sub2 = parseInt(document.getElementById('s2').value);
+                var sub3 = parseInt(document.getElementById('s3').value);
+                var sub4 = parseInt(document.getElementById('s4').value);
+                var sub5 = parseInt(document.getElementById('s5').value);
+                var total = sub1 + sub2 + sub3 + sub4 + sub5;
+                var per  = total/5; 
+                var grade;
+        
+                if (per < 30){
+                    grade = 'F';
+                } 
+                
+                else if(per>=30 && per<=39.99){
+                    grade = 'D';
+                }
+                
+                else if(per>=40 && per<=59.99){
+                    grade = 'C';
+                }
+                
+                else if(per>=60 && per<=74.99){
+                    grade = 'B';
+                }
+                
+                else if(per>=75 && per<=100){
+                    grade = 'A';
+                }
+                
+                else{
+                    grade = "Invalid or Failed";
+                }
+            document.getElementById("demo").innerHTML = "<br><b> Your Total Marks</b> : " +total+ "<br><br> <b>Your Percentage</b> : " +per+ " % " + "<br><br> <b>Your Grade</b> : " +grade;    
+            }
+            
+        </script>
+    </body>
+</html>
