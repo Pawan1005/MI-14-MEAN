@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 3-Q3</title>
+    </head>
+    <body>
+        <label>Enter a number : </label>
+        <input type="text" id="num" maxlength="5">
+        <button onclick="check_Number()">Check</button>
+        <p id="demo"></p>
+
+        <script>
+            function check_Number(){
+                var x;
+                x=parseInt(document.getElementById('num').value);
+        
+                if(x % 2 == 0)
+                document.getElementById('demo').innerHTML= x + " It is an even Number";
+                else
+                document.getElementById('demo').innerHTML= x + " It is an Odd Number";
+            } 
+        </script>
+    </body>
+</html>
