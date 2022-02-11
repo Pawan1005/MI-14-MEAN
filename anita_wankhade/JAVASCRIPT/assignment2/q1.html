@@ -11,21 +11,20 @@
                 text-align: center; 
             }
         </style>
-        <h2>Five Largest Number</h2>
-        <p> [75, 150, 85, 62, 95] </p>
-        <p><b>2</b><sup><b>nd</b></sup> <b> Largest number : </b></p>
-        <p id="demo1"></p>
+        <h2>Five Highest Number</h2>
+        <p><b>2</b><sup><b>nd</b></sup> <b> Highest Number : </b><p id="demo1"></p>
         <p id="demo2"></p>
-        <p id="demo3"></p>
-        <p id="demo4"></p>
-        <p id="demo5"></p>
-    <script>
-        document.getElementById("demo1").innerHTML = Math.max(75, 150, 85, 62, 95);
-        let b = Math.max(20);
-        let c = Math.max(30);
-        let d = Math.max(40);
-        let e = Math.max(50);
-        document.getElementById("demo").innerHTML = a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e;
-    </script>
-</body>
+        <script>
+            const num = [40, 120, 75, 50, 15];
+            var len = num.length;
+            document.getElementById("demo1").innerHTML = "<br>" + "[" +num+ "]";
+            var avg;
+            var arr = ['40','120','75','50','15'];
+            avg=arr.sort(function(a,b)
+            {
+                return b-a;
+            })[1];
+            document.getElementById("demo2").innerHTML = + avg;;
+        </script>
+    </body>
 </html>
