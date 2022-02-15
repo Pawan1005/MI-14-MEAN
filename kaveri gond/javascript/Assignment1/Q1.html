@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript assignment</title>
+</head>
+    <body>
+        <script type="text/javascript"></script>
+        <h2>swip two number<h2>
+        
+        <label >A :</label>
+        <input type="" id="first" ></input>
+        <label >B :</label>
+        <input type="" id="second" >
+        
+        <button  onclick = "swap1()">Method1</button>
+        
+        <button  onclick = "swap2()">Method2</button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        
+        <script>
+            function swap1() {
+                            var x ,y, temp ;
+                            x = Number (document.getElementById("first").value) ;
+                            y = Number (document.getElementById("second").value) ;
+
+                            document.getElementById("demo").innerHTML="with temporary variable <br> before swaping A = " + x +    " B = " + y ; 
+                            temp = x;
+                            x = y;
+                            y = temp;
+
+                            document.getElementById("demo2").innerHTML="after swaping A = " + x +   " B = " + y ;
+                        }
+
+            function swap2() {
+                 var p, q;
+                 p = Number (document.getElementById("first").value) ;
+                 q = Number (document.getElementById("second").value) ;
+
+                document.getElementById("demo3").innerHTML="without temporary variable <br> before swaping A = " + p +    " B = " + q ; 
+                 p= p+q;
+                 q= p-q;
+                 p= p-q;
+                 
+                document.getElementById("demo4").innerHTML="After swaping A = " + p +  " " + " B = " + q ;
+            } 
+       
+        </script>
+       
+    </body>
+</html>
