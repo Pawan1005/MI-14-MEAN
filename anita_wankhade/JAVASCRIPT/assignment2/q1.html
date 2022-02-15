@@ -11,20 +11,17 @@
                 text-align: center; 
             }
         </style>
-        <h2>Five Highest Number</h2>
-        <p><b>2</b><sup><b>nd</b></sup> <b> Highest Number : </b><p id="demo1"></p>
-        <p id="demo2"></p>
+        <p>Five Numbers are:<span id="demo1"></span></p>
+        <p>The 2nd largest number is:<span id="demo2"></span></p>
         <script>
-            const num = [40, 120, 75, 50, 15];
-            var len = num.length;
-            document.getElementById("demo1").innerHTML = "<br>" + "[" +num+ "]";
-            var avg;
-            var arr = ['40','120','75','50','15'];
-            avg=arr.sort(function(a,b)
-            {
-                return b-a;
-            })[1];
-            document.getElementById("demo2").innerHTML = + avg;;
+            const num = [40,120,75,50,15];
+            let len = num.length;
+            document.getElementById("demo1").innerHTML = "<br><br>" + "[" +num+ "]";
+            let c;
+            c=num.sort(function(a, b) 
+            { 
+                return b - a; })[1];
+            document.getElementById("demo2").innerHTML = "<br><br>" + c;
         </script>
     </body>
 </html>
