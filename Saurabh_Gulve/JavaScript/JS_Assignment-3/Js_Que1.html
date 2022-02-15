@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 3-Q1</title>
+    </head>
+    <body>
+        <label>Enter a year :</label>
+        <input type="text" id="year" maxlength="4">
+        <button onclick="checkLeapYear()">Check</button>
+        <p id="res"></p>
+
+        <script>
+            function checkLeapYear(){
+                var yr;
+                yr = parseInt(document.getElementById("year").value);
+                if(yr)
+                {    
+                    if((yr % 4 == 0) && (yr % 100 != 0))
+                    document.getElementById("res").innerHTML = "It is a Leap Year";
+
+                    else if(yr % 400 == 0)
+                    document.getElementById("res").innerHTML = "It is a Leap Year";
+
+                    else
+                    document.getElementById("res").innerHTML = "It is not a Leap Year";
+                }
+            }
+        </script>
+    </body>
+</html>
