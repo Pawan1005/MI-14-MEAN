@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 4 Q3</title>
+    </head>
+    <body>
+        <h3>Krishnamurthy Number</h3>
+        <label >Enter any Number : </label>
+        <input type="text" id="num">
+        <button onclick="myfunc()"> Check</button>
+        <p id="demo"></p>
+
+        <script>
+            function myfunc(){
+                var x = Number (document.getElementById("num").value);
+                var  temp;
+                temp = x;
+                var y = 0;
+
+                while (temp != 0) 
+                {
+                    var rem = temp % 10;
+                    y = y + fact (rem);
+                    temp = parseInt(temp/10);
+                }
+
+                if (y == x){
+                    document.getElementById("demo").innerHTML = x + " is a Krishnamurthy number";
+                } 
+                else{
+                    document.getElementById("demo").innerHTML = x + " is not a Krishnamurthy number";
+                }
+            }
+
+            function fact(n){
+                if(n == 1)
+                    return 1;
+                    return  n*fact(n-1);
+            }
+
+        </script>
+    </body>
+</html>
