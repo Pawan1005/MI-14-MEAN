@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        h3{
+            color: blue;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+    <body>
+        <h3>Checking the number for even or odd.</h3>
+        <label for="number">Enter the number</label>
+        <input type="text" id="num" placeholder="number"></input>
+        <button onclick="Function()">Check</button>
+        <p id="demo"></p>
+
+        <script>
+            function Function(){
+                var x = Number (document.getElementById("num").value)
+                
+
+                if (x%2 == 0) {
+                   
+                    document.getElementById("demo").innerHTML = +x + "is an even number .";
+                  
+                }
+                else{
+                    document.getElementById("demo").innerHTML = +x + "is an odd number .";
+                }
+            }
+
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>
