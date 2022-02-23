@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <title>Javascript</title>
+        <style>
+            h2{
+                text-align: center;
+                background-color: rgb(169, 175, 83);
+            }
+            p{
+                text-align: center; 
+            }
+        </style>
+        <p>Five Numbers are:<span id="demo1"></span></p>
+        <p>The 2nd largest number is:<span id="demo2"></span></p>
+        <script>
+            const num = [40,120,75,50,15];
+            let len = num.length;
+            document.getElementById("demo1").innerHTML = "<br><br>" + "[" +num+ "]";
+            let c;
+            c=num.sort(function(a, b) 
+            { 
+                return b - a; })[1];
+            document.getElementById("demo2").innerHTML = "<br><br>" + c;
+        </script>
+    </body>
+</html>
