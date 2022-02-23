@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+    <body>
+        <h3>The number are :</h3>
+
+        <p id="demo"></p>
+
+        <p id="demo1"></p>
+         
+
+
+        <script>
+             const point = [20, 120, 100, 54, 78];
+             let a= point.lenght;
+            document.getElementById("demo").innerHTML = point;
+
+            let c;
+            c=point.sort(function(a, b) 
+            { 
+                return b - a; })[1];
+            document.getElementById("demo1").innerHTML ="second highest number =" +"<br><br>" + c; 
+             
+             
+            
+
+
+        </script>
+
+
+
+        
+    </body>
+</html>

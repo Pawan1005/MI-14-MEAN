@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+    <body>
+        <h3>Prime Number</h3>
+
+        <label for="num"> Number to check</label>
+        <input type="text" id="num" placeholder="number"></input>
+
+       <button onclick ="Myfunct()">Check</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function Myfunct(){
+                 var a = Number (document.getElementById("num").value);
+                 
+                if (a == 1) {
+                    document.getElementById("demo").innerHTML = "1 is neither prime number";
+                }
+                else{
+                    for ( var i = 2; i<a; i++){
+                        if (a % i == 0) {
+                            document.getElementById("demo").innerHTML = +a+ "is not a prime number .";   
+                            break;
+                        }
+                        else {
+                            document.getElementById("demo").innerHTML = +a+ "is  a prime number .";  
+                        }   
+                    }
+                }
+
+               
+                 
+            }
+           
+
+
+        </script>
+        
+    </body>
+</html>

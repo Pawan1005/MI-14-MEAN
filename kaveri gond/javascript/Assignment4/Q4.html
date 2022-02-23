@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+    <body>
+        <h3>Vowels</h3>
+          <label for="chart">Enter the alphabet :</label>
+          <input type="text" id="alpha"></input>
+          <button onclick="vowel()">Submit</button>
+
+          <p id="demo"></p>
+
+          <script>
+              function vowel(){
+              var x =  (document.getElementById("alpha").value) ;
+              switch (x) 
+              {
+                  case 'a':
+                  case 'e':
+                  case 'i':
+                  case 'o':
+                  case 'u':
+                  case 'A':
+                  case 'E':
+                  case 'I':
+                  case 'O':
+                  case 'U':
+
+                  document.getElementById("demo").innerHTML =  "is a vowel .";
+                  break;
+                  default:
+                  document.getElementById("demo").innerHTML =  "is not a vowel .";
+                  break;
+              }
+            
+        }
+
+          </script>
+
+
+
+
+        
+    </body>
+</html>

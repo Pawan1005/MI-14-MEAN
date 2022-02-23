@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+    <body>
+        <h3>marks of 5 subjects</h3>
+        <label >subject 1</label>
+        <input type="text" id="first"><br>
+
+        <label >subject 2</label>
+        <input type="text" id="second"><br>
+
+        <label >subject 3</label>
+        <input type="text" id="third"><br>
+
+        <label >subject 4</label>
+        <input type="text" id="forth"><br>
+
+        <label >subject 5</label>
+        <input type="text" id="fifth"></br></br></br>
+
+        <button onclick="myfuct()">Total Scores</button>
+
+        <p id="demo"></p>
+        
+        <script>
+            function myfuct(){
+             var a,b,c,d,e;
+             a=Number (document.getElementById("first").value);
+             b=Number (document.getElementById("second").value);
+             c=Number (document.getElementById("third").value);
+             d=Number (document.getElementById("forth").value);
+             e=Number (document.getElementById("fifth").value);
+             
+             var x = a+b+c+d+e;
+             var y =(x/500)*100;
+ 
+
+              var grade;
+               if (y<=100 && y>=80) {
+                  grade = "A";
+               }
+               else if(y<=79 && y>=60) {
+                   grade = "B";
+               }
+               else if (y<=59 && y>=40) {
+                   grade = "C";
+               }
+               else  
+               {
+                   grade = "F";
+               }
+              
+               document.getElementById("demo").innerHTML= "Total mark =" +x +"<br><br>" + "Percentage =" +y +"<br><br>" + "Your grade is : " +grade ;
+             
+            }
+        
+
+
+        </script>
+        
+    </body>
+</html>

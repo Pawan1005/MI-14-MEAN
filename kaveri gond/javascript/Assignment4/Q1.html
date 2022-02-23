@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>Armstrong Number</h3>
+        <label >Enter  number</label>
+        <input type="text" id="num">
+        <button onclick="myfunct()">Check it</button>
+
+        <p id="demo"></p>
+         <script>
+                 function myfunct(){
+                 var x = 0 , y ,z ;
+                 var a = Number (document.getElementById("num").value);
+                 y = a;
+                 while (y > 0) {
+                     z = y % 10;
+                     y = parseInt (y/10);
+                     x = x + (z * z * z);
+                 }
+                 if (a == x) {
+                   document.getElementById("demo").innerHTML = " The given number is armstrong number" ; 
+                  } else{
+                    document.getElementById("demo").innerHTML = " The given number is not armstrong number" ; 
+                  } 
+             }
+
+
+
+         </script>
+        
+    </body>
+</html>
