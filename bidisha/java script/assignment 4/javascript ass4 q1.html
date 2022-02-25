@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 4 Q1</title>
+    </head>
+    <body>
+        <h3>Armstrong Number</h3>
+        <label for="number">Enter a Number: </label>
+        <input type="text" id="num">
+        <button onclick="myfunc()">Check</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            function myfunc(){
+
+                let x = 0;
+                const number = Number(document.getElementById('num').value);
+                let y = number;                 // temporary variable
+                while (y > 0)
+                {
+                    let r = y % 10;             // r for remainder
+
+                    x = x + r * r * r;
+
+                    y = parseInt(y / 10);       // convert float to int
+                }
+                // check the condition
+                if (x == number) {
+                    document.getElementById('demo').innerHTML = number + " is an Armstrong number";
+                }
+
+                else {
+                    document.getElementById('demo1').innerHTML = number + " is not an Armstrong number";
+                }
+            }
+        </script>
+    </body>
+</html>

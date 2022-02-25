@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>javascript ass 4</title>
+    </head>
+    <body>
+        <script>
+            var num = 153;
+            var Check = num;
+            var armstrong = 0;
+            var sum = 0;
+            var power;
+            var len = num.toString().length;
+            while(num ! = 0){
+            armstrong = num % 10;
+            power = Math.pow(armstrong,len);
+            sum = sum + power;
+            num = parseInt(num/10);
+            }
+            if(Check == sum){
+              document.write("This is Armstrong Number");
+            }
+            else {
+                document.write("This is Not a  Armstrong Number");
+            }
+            </script>
+    </body>
+</html>
