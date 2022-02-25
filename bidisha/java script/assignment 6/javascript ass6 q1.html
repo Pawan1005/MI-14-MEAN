@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 6 Q1</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Displaying Array Elements</h1>
+        <button onclick="arr_show()">Enter Elements</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+
+        <script>
+            function arr_show() {
+                var inputArray = [];
+                var size = 5; 
+
+                for(var i=0; i<size; i++) {
+                    inputArray[i] = prompt('Enter Element ' + (i+1));
+
+                }
+
+                let txt = "";
+                inputArray.forEach(myFunction);
+
+                function myFunction(value) {
+                txt += value + "<br>"; 
+                }
+
+                document.getElementById('demo').innerHTML ="<br> <b>Array Elements<b> : <br> " + inputArray;
+                document.getElementById('demo1').innerHTML ="<br><b> Array elements list <b> <br>" + txt;
+
+            }
+        </script>
+    </body>
+</html>

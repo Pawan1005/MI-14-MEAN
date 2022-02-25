@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>javascript ass4 q2</title>
+</head>
+<body>
+    <h3>Automorphic Number</h3>
+    <label for="number">Enter a Number: </label>
+    <input type="text" id="num">
+    <button onclick="myfunc()">Check</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+         function isAutomorphic (N)
+         {
+             let sq = N * N;
+             while (N > 0)
+             {
+                 if (N % 10 != sq % 10)
+                 return -1;
+                 N /= 10;
+                 sq /= 10;
+             }
+             return 1;
+         }
+         let N = 5;
+         let geeks = isAutomorphic (N) ? "Automorphic" : "Not Automorphic";
+         document.write(geeks);
+        </script>
+        </body>
+        
+</html>
