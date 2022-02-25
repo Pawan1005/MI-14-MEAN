@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 5 Q5</title>
+    </head>
+    <body>
+        <h3>Floyd's triangle</h3>
+        <input type="text" id="first" placeholder="Enter a number">
+        <button onclick="floyds()">Submit</button> 
+
+        <script>
+            function floyds()
+            {
+                var n,i,j,number = 1;
+                n = parseInt(document.getElementById ("first").value);
+                for(i = 1; i <= n; i++ )
+                {
+                    for(j = 1; j <= i; j++)
+                    {
+                        document.write(number + " ");
+                        number++;
+                    }
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

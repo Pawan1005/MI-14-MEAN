@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 5 Q1</title>
+</head>
+
+<body>
+    <h3>Check Sum equals to Middle Digit Number</h3>
+    <input type="text" id="first" placeholder="Enter a number" required>
+    <button onclick="middle ()">Submit</button>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+
+    <script>
+        function middle() {
+            var a,sum,i = 0;
+            var num = document.getElementById("first").value;
+            document.write("<b>The Number is <b>" + num) + "<br>";
+            a = num.length;
+
+            if (a == 3) {
+                sum = parseInt(num[i]) + parseInt(num[i + 2]);
+
+                document.write("<br> Sum of First & Last digit is " + sum);
+
+                document.write("<br>")
+
+                if (sum == num[i + 1]) {
+                    document.write("Middle digit is equal to the sum of other two digits");
+                }
+                else {
+                    document.write("Middle digit is not equal to the sum of other two digits");
+
+                }
+
+            }
+            else {
+                document.write("<br> Invalid number.... Please enter a Three Digit Number");
+
+            }
+        }
+    </script>
+</body>
+
+</html>
