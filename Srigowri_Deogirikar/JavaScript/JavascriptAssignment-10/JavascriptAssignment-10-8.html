@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 10</title>
+</head>
+<body>
+    <script>
+
+function is_alphaDash(str)
+{
+ regexp = /^[a-z0-9_\-]+$/i;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+
+document.write(is_alphaDash('12-133')+"<br>");
+
+document.write(is_alphaDash('100_23')+"<br>");
+</script>
+</body>
+</html>
