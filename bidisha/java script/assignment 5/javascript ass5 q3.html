@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 5 Q3</title>
+</head>
+
+<body>
+    <h3> print all the prime numbers between these two numbers entered by a user.</h3>
+    <input type="text" id="first" placeholder="Enter a number" required>
+    <button onclick="demo ()">Submit</button>
+
+<script>
+    function demo() {
+        var num = document.getElementById("number").value;
+        var isPrime;
+        for(var i=2;i<=num;i++) {
+            isPrime = 1;
+            for(var  j=2;j<=i/2;j++) {
+                if(i%j == 0) {
+                    isPrime = 0;
+                    break;
+                }
+            }
+            if(isPrime == 1) {
+                document.write(i+"<br>");
+            }
+        }
+    }
+    </script>
+    </body>
+    </html>

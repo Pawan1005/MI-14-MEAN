@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 6 Q4</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Sum of factorials of all the numbers</h1>
+        <button onclick="arr_sumfact()">Enter Elements</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+
+        <script>
+            function arr_sumfact() {
+                var inputArray = [];
+                var size = 5; 
+                
+                for(var i=0; i<size; i++) {
+                    inputArray[i] = prompt('Enter Element ' + (i+1));
+                }
+                let txt = "";
+                inputArray.forEach(myFunction);
+                
+                function myFunction(value) {
+                txt += value + "<br>"; 
+                }
+                function factorial(n)
+                {
+                    let f = 1;
+                    for(let i = 1; i <= n; i++)
+                    {
+                        f *= i;
+                    }
+                    return f;
+                }   
+                function sumFactorial(arr, n)
+                {
+                
+                    // To store the required sum
+                    let s = 0;
+                    for (let i = 0; i < n; i++)
+                    {
+                        
+                        // Add factorial of all the elements
+                        s += factorial(arr[i]);
+                    }
+                    return s;
+                }
+                
+                // Driver code
+                let arr = inputArray;
+                let n = arr.length;
+                
+                document.getElementById('demo').innerHTML ="<br> <b>Array Elements<b> : <br> " + inputArray;
+                document.getElementById('demo1').innerHTML ="<br> <b>Sum of factorials of all the numbers:<b> " + (sumFactorial(arr, n));
+                document.getElementById('demo2').innerHTML ="<br><b> Array elements list <b> <br> " + txt;  
+            }
+        </script>
+    </body>
+</html>

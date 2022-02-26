@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 5 Q4</title>
+    </head>
+    <body>
+        <h3>Sum of Even and Product of Odd digits</h3>
+        <input type="text" id="first" placeholder="Enter a number" minlength="3">
+        <button onclick="sum_prod6()">Submit</button> 
+        <div id="demo"></div>
+        <div id="demo1"></div>
+
+        <script>
+            function sum_prod6()
+            {
+                var r,n,sum = 0, prod = 1;
+                n = parseInt(document.getElementById ("first").value);
+                n1 = n;
+                while(n > 0)
+                {
+                    r = n % 10;
+
+                    if(r % 2 == 0)
+                    {
+                        sum = sum + r;
+                    }
+                    else
+                    {
+                        prod = prod * r;
+                    }
+                    n = parseInt(n/10);
+                }
+                
+                document.getElementById ("demo").innerHTML= "Sum of even digits : " + sum;
+                document.getElementById ("demo1").innerHTML= "Product of odd digits : " + prod;
+            }
+
+        </script>
+    </body>
+</html>

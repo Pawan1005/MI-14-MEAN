@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 6 Q5</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Factorials for each number</h1>
+        <button onclick="arr_facteach()">Enter Elements</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+
+        <script>
+            function arr_facteach() {
+                var inputArray = [];
+                var size = 5; 
+
+                for(var i=0; i<size; i++) {
+                    inputArray[i] = prompt('Enter Element ' + (i+1));
+                }
+
+                const arr = inputArray;
+                const factorial = (num, fact = 1) => {
+                if(num){
+                    return factorial(num-1, fact*num);
+                };
+                return fact;
+                };
+                const factorialArray = arr => arr.map(element => factorial(element));
+
+                let txt = "";   
+                inputArray.forEach(myFunction);
+                document.getElementById('demo3').innerHTML ="<br><b> Array elements list <b> <br> " + txt;  
+                function myFunction(value) {
+                txt += value + "<br>"; 
+                }
+
+                document.getElementById('demo').innerHTML ="<br> <b>Array Elements<b> : <br> " + inputArray;
+                document.getElementById('demo1').innerHTML ="<br> <b>factorials of each number :<b> <br> " + (factorialArray(arr));
+                document.getElementById('demo2').innerHTML ="<br> <b>factorials of each number in reverse order:<b> <br>" + (factorialArray(arr)). reverse();
+            }
+        </script>
+    </body>
+</html>

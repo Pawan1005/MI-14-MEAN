@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 6 Q2</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Sorting & Joining Array Elements</h1>
+        <button onclick="arr_join()">Enter Elements</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+
+        <script>
+            function arr_join() {
+                var inputArray = [];
+                var size = 5; 
+
+                for(var i=0; i<size; i++) {
+                    inputArray[i] = prompt('Enter Element ' + (i+1));
+                }
+                let txt = "";
+                inputArray.forEach(myFunction);
+
+                function myFunction(value) {
+                txt += value + "<br>"; 
+                }
+
+                document.getElementById('demo').innerHTML ="<br> <b>Array Elements<b> : <br> " + inputArray.join(" ~ ");
+                document.getElementById('demo1').innerHTML ="<br> <b>Array Elements in Ascending Order<b> : <br> " + inputArray.sort();
+                document.getElementById('demo2').innerHTML ="<br> <b>Array Elements in Ascending Order<b> Capital Letters: <br> " + inputArray.toString().toUpperCase();
+                document.getElementById('demo3').innerHTML ="<br> <b>Array Elements in Descending Order<b> : <br> " + inputArray.reverse();
+                document.getElementById('demo4').innerHTML ="<br> <b>Array Elements in Descending Order<b> Capital Letters: <br> " + inputArray.toString().toUpperCase();
+                document.getElementById('demo5').innerHTML ="<br><b> Array elements list <b> <br>" + txt;
+            }
+        </script>
+    </body>
+</html>
