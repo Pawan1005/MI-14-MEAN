@@ -1,0 +1,112 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 8</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+  var elm =parseInt(prompt('Enter the elements section 1'));
+var arr = [];var j;
+
+  for( j=0; j<=elm; j++) {
+	
+arr[j]=prompt("Enter the number:");
+
+document.write("Secton1 are:"+arr[j]+","+"<br>");
+  }
+
+
+  var elm2 =parseInt(prompt('Enter the elements section 2'));
+var arr = [];var i;
+
+  for( i=0; i<=elm; i++) {
+	
+arr[i]=prompt("Enter the number:");
+
+document.write("Section2 are"+arr[i]+","+"<br>");
+  }
+
+  function merge(arr, l, m, r)
+{
+    var n1 = m - l + 1;
+    var n2 = r - m;
+  
+    
+    var L = new Array(n1); 
+    var R = new Array(n2);
+  
+    
+    for (var i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (var j = 0; j < n2; j++)
+        R[j] = arr[m + 1 + j];
+  
+    
+    var i = 0;
+  
+   
+    var j = 0;
+  
+   
+    var k = l;
+  
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        }
+        else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+  
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+  
+    
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+  
+function mergeSort(arr,l, r){
+    if(l>=r){
+        return;
+    }
+    var m =l+ parseInt((r-l)/2);
+    mergeSort(arr,l,m);
+    mergeSort(arr,m+1,r);
+    merge(arr,l,m,r);
+}
+  
+
+function printArray( A, size)
+{
+    for (var i = 0; i < size; i++)
+       document.write(  A[i] + " ");
+}
+  
+  
+
+    var arr_size = arr.length;
+  
+    document.write(  "Given array is <br>");
+    printArray(arr, arr_size);
+  
+    mergeSort(arr, 0, arr_size - 1);
+  
+    document.write( "<br>Sorted array is <br>");
+    printArray(arr, arr_size);
+
+
+</script>
+</body>
+</html>
