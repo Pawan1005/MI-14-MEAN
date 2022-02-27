@@ -1,24 +1,19 @@
-           
 <!Doctype html>
 
 <html>
 <head>
     <title>Assignment 12</title>
+    <body>
+
+        <label for="A">A</label>
+        <input type="text" id="A" name="" placeholder="">
+    
+    <button onclick="calculate('#p')">Calculate</button>
+    
+<p id="demo" ></p>   
 <script>
 
-class Employee {
-	constructor(name, age, salary) {
-	 this.name = name;
-	 this.age = age;
-	 this.salary = salary;
-	}
-}
 
-let emp = new Employee('adam', 34, 4567);
-document.write(emp.name());
-document.write(emp.employeeDetails());
-
- 
  let pattern = /^([A-Z][a-zA-Z]*)\s\-\s([1-9][0-9]*)\s\-\s([a-zA-Z0-9 -]+)$/g;
 
  for (let arrS of arrStr) {
@@ -61,12 +56,12 @@ var name ;
        var  grossSal ;
        var netSal;
 function calculate() {
-        da = Math.floor(salary * (15.0 / 100));
+    da = Math.floor(salary * (15.0 / 100));
         hra = Math.floor(salary * (10.0 / 100));
         pf = Math.floor(salary * (12.0 / 100));
         grossSal = salary + da + hra;
         netSal = grossSal - pf;
-    
+
   document.getElementById("A").value;
        document.getElementById("demo").innerHTML="Employee Name: "+name;
        document.getElementById("A").value;
@@ -82,36 +77,16 @@ function calculate() {
         document.getElementById("A").value;
        document.getElementById("demo").innerHTML="Net Salary: "+netSal;
  
-    
+  
+
+if (netSal==180000)
+{
+    alert('Incometax Payer')
 }
-
+else {
+    alert('not Incometax Payer')
+}
+}
 </script>
-</head>
-<body>
-<h1 text-align="Center">
-Payslip
-</h1>
-<form name="pay" method="post" onsubmit="display()">
-Name of Employee:<input type="text" name="emp"></input><br>
-Department:<input type="text" name="dept"></input><br>
-Designation:<input type="text" name="des"></input><br>
-Basic Salary:<input type="text" name="bs"></input><br>
-HRA:<input type="text" name="hra"></input><br>
-DA:<input type="text" name="da"></input><br>
-<input type="Submit"></input>
-</form>
-
-<label for="A">A</label>
-    <input type="text" id="A" name="" placeholder="">
-
-<button onclick="calculate('#p')">Calculate</button>
-
-
-
-<p id="demo"></p>
 </body>
-</html>
-
-      </script>
-    </body>
 </html>
