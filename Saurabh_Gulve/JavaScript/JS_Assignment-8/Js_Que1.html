@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 8 -Q1</title>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Displaying a Student Marks for different subjects</h2>
+ 
+        <script>
+            document.write("Marks of a Student for 10 subjects <br><br>")
+            const submark = [];
+            for (let j = 0; j < 10; j++) {
+                var mark = prompt("Enter 10 subject marks out of 80");
+                submark[j] = mark;
+                if (mark > 80) {
+                    alert("Do not enter above 80 marks ");
+                    submark[j] = 0;
+                }
+            }
+            //display subject
+            for (let s1 = 0; s1 < 10; s1++) {
+                document.write("Subject " + (s1 + 1) + " Marks : " + submark[s1] + "<br>");
+            }
+            document.write("<br>");
+            //add 20% mark each subject;
+            const sum = [];
+            for (let k = 0; k < 10; k++) {
+                sum[k] = ((20 / 100) * submark[k]) + parseInt(submark[k]);
+
+            }
+            document.write("Total Marks : 20 % of marks Out of 80 <br><br>");
+
+            for (let s1 = 0; s1 < 10; s1++) {
+                document.write("Subject " + (s1 + 1) + " Marks : " + sum[s1] + "<br>");
+            }
+            document.write("<br>");
+        </script>
+    </body>
+</html>

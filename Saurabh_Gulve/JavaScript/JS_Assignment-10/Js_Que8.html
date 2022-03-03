@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 10 -Q8</title>
+    </head>
+    <body>
+        <label> Enter a string: </label>   
+        <input type="text" id= "first"> <br> <br>  
+        <button onclick="is_alphaNumeric()"> Submit</button>
+
+        <script>        
+            function is_alphaNumeric()
+            {
+                var str = document.getElementById('first').value;
+                regexp = /^[a-z 0-9 \-_]+$/g;
+                if (regexp. test(str))
+                {
+                    document.write('It is a valid string');
+                }
+                else{
+                    document.write('It is not a valid string');
+                }
+        }
+        </script>  
+    </body>
+</html>

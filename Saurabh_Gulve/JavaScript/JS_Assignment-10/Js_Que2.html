@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 10 -Q2</title>
+    </head>
+    <body>
+        <h3>Check valid Credit Number</h3><br>
+        <label> Enter Number : </label>   
+        <input type="text" id= "first"> <br> <br>  
+        <button onclick="card_number()"> Submit</button>
+        <div id="valid"></div>
+        <div id="invalid"></div>
+
+        <script>        
+          function card_number()
+            {
+                var num = document.getElementById ("first").value;
+
+                var cardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+
+                if(cardno.test(num))
+                {
+                   document.getElementById('valid').innerHTML = "<br> Valid Number";
+                }
+                else
+                {
+                    document.getElementById('invalid').innerHTML = "<br> Invalid Number";
+                }    
+            }      
+        </script>  
+    </body>
+</html>

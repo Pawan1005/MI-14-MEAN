@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 13 -Q3</title>
+    </head>
+    <body>
+        <script>
+            function getDateAgo(date, days) {
+            let dateCopy = new Date(date);
+                                                                                                                                                
+            dateCopy.setDate(date.getDate() - days);
+            return dateCopy.getDate();
+            }
+                                                                                                                                                
+            let date = new Date();
+                                                                                                                                                
+            document.write( getDateAgo(date, 1) ); 
+            document.write("<br>")
+            document.write( getDateAgo(date, 2) ); 
+            document.write("<br>")
+            document.write( getDateAgo(date, 127) ); 
+        </script>
+    </body>
+</html>

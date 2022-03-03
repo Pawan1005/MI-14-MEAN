@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 10 -Q4</title>
+    </head>
+    <body>
+        <h3> Search date within a string</h3><br>
+        <div id="demo"></div>
+               
+        <script>
+                var str1 = 'The first world war was faught in between 28/07/1914 to 11/11/1918';
+                var regex = str1.match(/\d{2}([\/.-])\d{2}\1\d{4}/g);
+
+                document.getElementById('demo').value = regex;
+                document.write("Date from a string :" + regex + "<br>");
+                              
+        </script>  
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 8 -Q3</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Displaying a Student Marks for different subjects</h2>
+
+        <p>Sort by your Choice </p>
+
+        <p>1-Bubble sort <button type="button" onclick="bubblesort()">Bubble sort</button></p>
+        <p>2-Insertion sort <button type="button" onclick="insertionsort()"> Insertion sort</button></p>
+        <p>3-Selection sort <button type="button" onclick="selectionsort()">Selection sort</button></p>
+        <p>4-Quick sort <button type="button" onclick="Qsort()">Quick sort</button></p><br>
+
+        <p> Total Marks : 20 % of marks Out of 80</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+
+        <script>
+            function addmark() {
+                const submark = [];
+                for (let j = 0; j < 10; j++) {
+                    var mark = prompt("Enter the 10 subject marks out of 80");
+                    submark[j] = mark;
+                    if (mark > 80) {
+                        alert("Do not enter above 80 marks ");
+                        submark[j] = 0;
+                    }
+                }
+                
+                const sum = [];
+                for (let k = 0; k < 10; k++) {
+                    sum[k] = ((20 / 100) * submark[k]) + parseInt(submark[k]);
+                }
+                return sum;
+            }
+
+            //Insertion sort
+            function insertionsort() {
+                var arr = addmark();
+                document.getElementById("demo").innerHTML = "Subject Mark -  " + arr + "  <br>";
+                for (let i = 1; i < arr.length; i++) {
+                    for (let j = i - 1; j > -1; j--) {
+                        if (arr[j + 1] < arr[j]) {
+                            let temp;
+                            temp = arr[j + 1];
+                            arr[j + 1] = arr[j];
+                            arr[j] = temp;
+                        }
+                    }
+                }
+                document.getElementById("demo1").innerHTML = "Sorted subject marks - " + arr + " <br>";
+            }
+
+            //Quick sort
+            function Qsort() {
+                var arr = addmark();
+                document.getElementById("demo").innerHTML = "Subject Mark - " + arr + " <br>";
+
+                var sortarr = qsort(arr, 0, arr.length - 1);
+                function qsort(item, left, right) {
+
+                    var index;
+                    if (item.length > 1) {
+                        index = partition(item, left, right);
+                        if (left < index - 1) {
+                            qsort(item, left, index - 1);
+                        }
+                        if (index < right) {
+                            qsort(item, index, right);
+
+                        }
+                    }
+                    return item;
+                }
+                function swap(item, leftindex, rightindex) {
+                    var temp;
+                    temp = item[leftindex];
+                    item[leftindex] = item[rightindex];
+                    item[rightindex] = temp;
+                }
+                function partition(item, left, right) {
+                    var pivot = item[Math.floor((right + left) / 2)];
+                    i = left;
+                    j = right;
+                    while (i <= j) {
+                        while (item[i] < pivot) {
+                            i++;
+                        }
+                        while (item[j] > pivot) {
+                            j--;
+                        }
+                        if (i <= j) {
+                            swap(item, i, j);
+                            i++;
+                            j--;
+                        }
+                    }
+                    return i;
+                }
+                document.getElementById("demo1").innerHTML = "Sorted subject marks - " + sortarr + " <br>";
+            }
+            //Selection sort
+            function selectionsort() {
+                var arr = addmark();
+                document.getElementById("demo").innerHTML = "Subject Mark - " + arr + "  <br>";
+
+                let min;
+                for (let i = 0; i < arr.length - 1; i++) {
+                    min = i;
+                    for (let j = i + 1; j < arr.length; j++) {
+                        if (arr[j] < arr[min]) {
+                            min = j;
+                        }
+                    }
+                    if (min !== i) {
+                        let temp;
+                        temp = arr[i];
+                        arr[i] = arr[min];
+                        arr[min] = temp;
+                    }
+                }
+                document.getElementById("demo1").innerHTML = " Sorted subject marks - " + arr + "  <br>";
+            }
+            //Bubble sort
+            function bubblesort(arr) {
+                var arr = addmark();
+                document.getElementById("demo").innerHTML = "Subject Mark -  " + arr + "  <br>";
+
+                for (let i = 0; i < arr.length; i++) {
+                    for (let j = 0; j < arr.length - i - 1; j++) {
+                        if (arr[j] > arr[j + 1]) {
+                            let temp;
+                            temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+                document.getElementById("demo1").innerHTML = "Sorted subject marks -  " + arr + "  <br>";
+            }
+        </script>
+    </body>
+</html>

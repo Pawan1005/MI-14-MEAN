@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 8 -Q2</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Displaying a Student Marks for different subjects</h2>
+        
+        <script>
+            document.write("Marks of a Student for 10 subjects <br><br>");
+            const submark = [];
+            for (let j = 0; j < 10; j++) {
+                var mark = prompt("Enter the 10 subject marks out of 80");
+                submark[j] = mark;
+                if (mark > 80) {
+                    alert("Do not enter above 80 marks ");
+                    submark[j] = 0;
+                }
+
+            }
+            //display subject
+
+            for (let s1 = 0; s1 < 10; s1++) {
+                document.write("Subject " + (s1 + 1) + " Marks : " + submark[s1] + "<br>");
+            }
+            document.write("<br>");
+
+            //add 20% mark for each subject
+
+            const sum = [];
+            for (let k = 0; k < 10; k++) {
+                sum[k] = ((20 / 100) * submark[k]) + parseInt(submark[k]);
+
+            }
+            document.write("Total Marks : 20 % of marks Out of 80 <br><br>");
+
+            for (let s1 = 0; s1 < 10; s1++) {
+                document.write("Subject " + (s1 + 1) + " Marks : " + sum[s1] + "<br>");
+            }
+            document.write("<br>");
+
+            // sort by  quick sort    
+
+            var sortarr;
+            sortarr = qsort(sum, 0, sum.length - 1)
+            document.write("Sort Subject Marks by Quick Sort <br><br>");
+            for (let s1 = 0; s1 < 10; s1++) {
+                document.write("Subject " + (s1 + 1) + " Marks : " + sortarr[s1] + "<br>");
+            }
+            document.write("<br>");
+
+            function swap(item, leftindex, rightindex) {
+                var temp;
+                temp = item[leftindex];
+                item[leftindex] = item[rightindex];
+                item[rightindex] = temp;
+            }
+            function partition(item, left, right) {
+                var pivot = item[Math.floor((right + left) / 2)];
+                i = left;
+                j = right;
+                while (i <= j) {
+                    while (item[i] < pivot) {
+                        i++;
+                    }
+                    while (item[j] > pivot) {
+                        j--;
+                    }
+                    if (i <= j) {
+                        swap(item, i, j);
+                        i++;
+                        j--;
+                    }
+                }
+                return i;
+            }
+            function qsort(item, left, right) {
+                var index;
+                if (item.length > 1) {
+                    index = partition(item, left, right);
+                    if (left < index - 1) {
+                        qsort(item, left, index - 1);
+                    }
+                    if (index < right) {
+                        qsort(item, index, right);
+
+                    }
+                }
+                return item;
+            }
+        </script>
+    </body>
+</html>

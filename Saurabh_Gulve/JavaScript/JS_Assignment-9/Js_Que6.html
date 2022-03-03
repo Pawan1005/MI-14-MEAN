@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 9 -Q6</title>
+    </head>
+    <body>
+        <label> Enter your long string with many words : </label>   
+        <input type="text" id= "first"> <br> <br>  
+        <button onclick="check_count()"> Submit</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+
+        <script>
+            function check_count()
+            {                                                                       // today is a holiday
+                var str = String(document.getElementById ("first").value);
+                var wordCount = str.match(/(\w+)/g).length;
+                var spaceCount = (str.split(" ").length - 1);
+                
+                document.getElementById('demo').innerHTML = "<br> Total Words : " + wordCount;
+                document.getElementById('demo1').innerHTML = "<br> Whitespaces : " + spaceCount; 
+            }
+        </script>
+    </body>                                             
+</html>
