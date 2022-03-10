@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+    <body>
+    <center>
+        <h1>Javascript Program to find leap year</h1>
+        <hr color="Green">
+        <label>Enter Year: </label>
+        <input type="text" id="year"></input>
+        <input type="button" onClick="isLeapYear()" value="Check Leap Year">
+        <p id="GFG"></p>
+    </center>
+      
+    <!-- JavaScript code to check given year is
+        leap year or not -->
+    <script>
+        function isLeapYear() {
+            var year= document.getElementById("year").value;
+              
+            document.getElementById("GFG").innerHTML
+                = (year % 100 === 0) ? (year % 400 === 0)
+                                     : (year % 4 === 0);
+        }
+    </script>
+</body>
+  
+</html>       
