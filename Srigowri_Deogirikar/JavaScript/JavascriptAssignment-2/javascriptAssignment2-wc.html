@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>JavaScript program to find out the Second biggest of given three numbers</title>
+</head>
+<body>
+   
+    
+    
+
+<script>
+  
+    const numbersArray = [50,80,90,60,70];
+document.write("Array Data=>",numbersArray ,"<br>");
+const sortedArray=numbersArray.sort(((a, b)=> a - b));
+document.write("Array Data After Sort =>",sortedArray,"<br>");
+const arrayLength=sortedArray.length;
+document.write("Array Length  ",arrayLength,"<br>");
+const secondLargestNumber=sortedArray[arrayLength-2];
+document.write("Final Result=>", secondLargestNumber,"<br>");
+
+
+  
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

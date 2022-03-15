@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 10</title>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+var str1 = 'On the 03/09/2015 I am swiming in a pool, that was build on the 27-03-1994';
+
+var res1 = str1.match(/\d{2}([\/.-])\d{2}\1\d{4}/g);
+
+document.getElementById('out').value = res1;
+document.write("Number is :"+res1+"<br>");
+
+var str2 = 'Test  Client wants to reschedule your call from 2021-02-18 06:30:00+00:00 to 2021-02-18T07:00';
+
+var res2 = str2.match(/\d{2}([\/.-])\d{2}\1\d{4}/g);
+
+document.getElementById('out').value = res2;
+
+document.write("Number is :"+res2+"<br>");
+
+
+
+</script>

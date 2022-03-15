@@ -1,0 +1,66 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 11</title>
+</head>
+<body>
+  
+    <input type="text" id="textbox_id" placeholder="Enter NUmber here..." oninput="handleValueChange()"><button onclick="handleValueChange()">Show</button>
+    <p id="result"></p>
+    
+
+
+
+    <script>
+  
+  
+ 
+  var elm =parseInt(prompt('Enter the elements'));
+var arr = [];var j;
+
+  for( j=0; j<=elm; j++) {
+	
+arr[j]=prompt("Enter the number:");
+
+document.write(arr[j]+","+"<br>");
+
+
+       if (arr[j] >50) 
+             {
+             alert("Invalid Marks");
+             
+                          }
+ var total=Math.floor(arr[j]+33.33*arr[j]);
+ document.write("The values are:"+total+"<br>");
+                        }
+                        
+                    
+var elm1 =parseInt(prompt('Enter the elements'));
+var arr = [];var i;var k;
+
+  for( i=0; i<=elm; i++) {
+	
+arr[i]=prompt("Enter the Roll No");
+
+
+for( k=0; k<=elm; k++) {
+	
+    arr[k]=prompt("Enter the Marks");
+    
+document.write("Roll No is :"+arr[i]+","+"<br>");
+    document.write("Marks is"+arr[k]+","+"<br>");
+}
+  }
+
+
+  function handleValueChange() {
+    var y = document.getElementById('textbox_id').value;
+    var x = document.getElementById('result');
+    x.innerHTML = y;
+}
+
+
+  
+  </script>
+  </body>
+  </html>

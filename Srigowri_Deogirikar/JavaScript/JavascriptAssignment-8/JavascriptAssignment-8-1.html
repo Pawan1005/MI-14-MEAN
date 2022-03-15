@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 8</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+  
+  
+ 
+//    var elm =prompt('Enter the elements');
+
+//    for( i=0; i<=elm; i++){
+
+// var a = [];var j;
+
+//   for( j=0; j<=elm; j++) {
+	
+// a[j]=prompt("Enter the number:");
+
+// document.write(a[j]+","+"<br>");
+
+  
+     
+// if (a[j] >80) 
+//              {
+//              alert("do not enter above 80");
+             
+//                           }
+//  var total=Math.floor(parseInt(a[j]+(20/100)*a[j]));
+//  document.write("The values are:"+total);  
+                        
+                        
+//                      }
+const arr=[],total=[];
+for(i=0;i<10;i++)
+{
+var ele=prompt("Enter the marks");
+arr[i]=ele;
+if(ele>80)
+{
+  alert ("donot enter above 80");
+  arr[i]=0;
+}
+
+}
+
+document.write(arr+"<br>");
+for (let j=0;j<10;j++){
+   total[j]= Math.floor((20/100)*arr[j]) + parseInt(arr[j]);
+
+}
+
+
+document.write(total);
+
+
+
+
+</script>
+
+</body>
+</html>

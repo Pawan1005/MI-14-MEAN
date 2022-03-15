@@ -1,0 +1,19 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 9</title>
+</head>
+<body>
+    <script>
+
+var texts = ["test", "rest", "why", "puss"];
+
+for(var idx in texts){
+    var text = texts[idx].split("");
+    document.write(text + " -> " + text.some(function(v,i,a){return a.lastIndexOf(v)!=i;}) +"<br/>");
+    
+  }
+
+</script>
+</body>
+</html>

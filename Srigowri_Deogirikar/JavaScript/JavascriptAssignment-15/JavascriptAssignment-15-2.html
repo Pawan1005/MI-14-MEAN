@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Sales commission calculator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algorithm()
+{
+    let commission, earnings, gross_sales_in_the_week, sold_1_items, sold_2_items;
+    let sold_3_items, sold_4_items, weekly_salary;
+    sold_1_items = parseFloat (document.form1.sold_1_items.value);
+    sold_2_items = parseFloat (document.form1.sold_2_items.value);
+    sold_3_items = parseFloat (document.form1.sold_3_items.value);
+    sold_4_items = parseFloat (document.form1.sold_4_items.value);
+    weekly_salary=200;
+    gross_sales_in_the_week=sold_1_items*239.99+sold_2_items*129.75+sold_3_items*99.95+sold_4_items*350.89;
+    commission=gross_sales_in_the_week*0.09;
+    earnings=weekly_salary+commission;
+    document.form1.commission.value = commission;
+    document.form1.earnings.value = earnings;
+    document.form1.gross_sales_in_the_week.value = gross_sales_in_the_week;
+    document.form1.weekly_salary.value = weekly_salary;
+}
+ 
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="sold_1_items">Enter the value of sold 1 items:</label>
+                        </td>
+                        <td>
+                            <input name="sold_1_items" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sold_2_items">Enter the value of sold 2 items:</label>
+                        </td>
+                        <td>
+                            <input name="sold_2_items" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sold_3_items">Enter the value of sold 3 items:</label>
+                        </td>
+                        <td>
+                            <input name="sold_3_items" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sold_4_items">Enter the value of sold 4 items:</label>
+                        </td>
+                        <td>
+                            <input name="sold_4_items" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Process" type="button" onclick="algorithm();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="commission">Value of commission:</label>
+                        </td>
+                        <td>
+                            <input name="commission" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="earnings">Value of earnings:</label>
+                        </td>
+                        <td>
+                            <input name="earnings" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gross_sales_in_the_week">Value of gross sales in the week:</label>
+                        </td>
+                        <td>
+                            <input name="gross_sales_in_the_week" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="weekly_salary">Value of weekly salary:</label>
+                        </td>
+                        <td>
+                            <input name="weekly_salary" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
+Help community on VK Help community on VK
+Help group on Facebook Help group on Facebook

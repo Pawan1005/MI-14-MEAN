@@ -1,0 +1,141 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+#green{
+  border:2px solid white;
+  box-shadow:0 0 0 1px #392;
+  appearance:none;
+  border-radius:50%;
+  width:12px;
+  height:12px;
+  background-color:#fff;
+  transition:all ease-in 0.2s;
+
+}
+#green:checked{
+  background-color:#392;
+}
+#red{
+  border:2px solid white;
+  box-shadow:0 0 0 1px #932;
+  appearance:none;
+  border-radius:50%;
+  width:12px;
+  height:12px;
+  background-color:#fff;
+  transition:all ease-in 0.2s;
+
+}
+#red:checked{
+  background-color:#932;
+}
+
+#blue{
+  border:2px solid white;
+  box-shadow:0 0 0 1px blue;
+  appearance:none;
+  border-radius:50%;
+  width:12px;
+  height:12px;
+  background-color:#fff;
+  transition:all ease-in 0.2s;
+
+}
+#blue:checked{
+  background-color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+<p id="s1" align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel, similique praesentium veritatis accusantium provident consequatur vero obcaecati a velit odio harum mollitia quos assumenda aperiam! Rem, hic! Amet quia, neque sed assumenda consequatur, velit voluptas corporis, tempore a nemo earum placeat inventore praesentium! Rem eaque laboriosam provident molestias ex?</p>
+<button onclick="paragraph()">
+  Click Here
+</button> 
+
+<fieldset id="color">
+    <legend>Choose your favorite color</legend>
+
+    <input type="radio" id="k" name="m">
+    <label for="k">Blue</label><br/>
+
+    <input type="radio" id="s" name="m">
+    <label for="s">Green</label><br/>
+
+    <input type="radio" id="m2" name="m">
+    <label for="m1">Red</label>
+</fieldset>
+
+<input id="green" type="radio" name="s"><label for="green">Green</label></br>
+<input id="red" type="radio" name="s"><label for="red">Red</label></br>
+<input id="blue" type="radio" name="s"><label for="blue">Blue</label>
+
+ <p id="s2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s4" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+
+
+ <fieldset id="size">
+    <legend>Choose your Size</legend>
+
+    <input type="radio" id="k1" name="m">
+    <label for="k2">Size1</label><br/>
+
+    <input type="radio" id="s2" name="m">
+    <label for="s2">Size2</label><br/>
+
+    <input type="radio" id="m22" name="m">
+    <label for="m12">Size3</label>
+</fieldset>
+
+
+<p id="s5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s6" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s7" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+
+ <p id="s8" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s9" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+ <p id="s10" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, itaque.</p>
+
+
+
+<script> 
+    function paragraph() { 
+        var txt = document.getElementById("s1").align;
+      
+        document.getElementById( 
+                "geeks").innerHTML=txt; 
+    } 
+
+    document.getElementById('s2').style.color="blue";
+    document.getElementById('s3').style.color="green";
+    document.getElementById('s4').style.color="red";
+   
+
+
+    document.getElementById('s5').style.fontSize="10px";
+    document.getElementById('s6').style.fontSize="15px";
+    document.getElementById('s7').style.fontSize="20px";
+
+    document.getElementById('s8').style.fontFamily="Impact";
+    document.getElementById('s9').style.fontFamily="Charcoal";
+    document.getElementById('s10').style.fontFamily="sans-serif";
+
+ 
+</script>
+</body>
+</html>

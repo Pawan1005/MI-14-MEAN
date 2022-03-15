@@ -1,0 +1,94 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 7</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+   
+//    let result = [];
+// let students = [{name: "Sham",sub: {math: 95,eng: 90,science: 99}},{name: "Peter",sub:{math: 80,eng: 70,science: 60}},{name: "Bob",sub:{math:70,eng:75,science:95}},
+// {name: "William",sub:{math:70,eng:75,science:95}},{name: "John",sub:{math:70,eng:75,science:95}}
+
+// ];
+
+// students.forEach( student => {
+//   result.push({
+//     name: student.name,
+//     marks: Object.values(student.sub).reduce((a, b) => a + b)
+//   })
+// });
+
+// document.write(result)
+
+
+// var array=[
+//   {
+//       grade: "V",
+//       students: [
+//           {name: "Nrupul", marks: [10, 20, 30]},
+//           {name: "Prateek", marks: [20, 30, 40]}
+//       ]
+//   },
+//   {
+//       grade: "VI",
+//       students: [
+//           {name: "Aman", marks: [10, 20, 30]},
+//           {name: "Albert", marks: [20, 30, 40]}
+//       ]
+//   },
+//   {
+//       grade: "VII",
+//       students: [
+//           {name: "Yogesh", marks: [10, 20, 30]},
+//           {name: "Sandhya", marks: [20, 30, 40]}
+//       ]
+//   }
+// ]
+
+// for (var i = 0; i < array.length; i++){
+//     var ans1 = array[i].students[0].marks.reduce((a, c) => { return a + c });
+//     var ans2 = array[i].students[1].marks.reduce((a, c) => { return a + c });
+//     var sum;
+//     var person;
+//     if (ans1>ans2) {
+//         sum = ans1;
+//         person = array[i].students[0].name;
+//     } else {
+//         sum = ans2;
+//         person = array[i].students[1].name;
+//     }
+//     document.write(array[i].grade + "-" + person + "-" + sum+"<br>");
+// }
+function Student(n, a, m) {
+  var name = n;
+  var age = a;
+  var marks = m;
+  
+  var averageMarks = function() {
+    var sum = 0;
+    marks.forEach(function(m){
+      sum += m;
+    });
+    return sum/marks.length;    
+  }
+  this.printDetails = function() {
+    document.write('Name: ' + name + ' Age: ' + age + ' Average Marks: ' + averageMarks()+"<br>");
+  }
+}
+
+var student1 = new Student('Abhinav', 21, [70, 92, 84]);
+var student2= new Student('Akshay',21,[79,99,84]);
+var student3= new Student('Vinay',21,[74,94,87]);
+var student4= new Student('Akash',21,[72,99,54]);
+var student5= new Student('Armaan',21,[73,79,64]);
+student1.printDetails();
+student2.printDetails();
+student3.printDetails();
+student4.printDetails();
+student5.printDetails();
+
+  </script>
+  </body>
+  </html>

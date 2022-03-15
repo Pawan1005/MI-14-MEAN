@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 9</title>
+</head>
+<body>
+<script>
+
+var highEnd = 1000;
+var primes = sieve(highEnd);
+highEnd--;
+var found = false;
+while (found == false ) {
+    if (isPalindrome(highEnd.toString()) == true) {
+        if (primes[highEnd] == true) {
+            found = true;
+        }
+    }
+    highEnd--;
+}
+document.write(++highEnd);
+function isPalindrome(input) {
+    var i;
+    var length = input.length -1;
+
+    for (i=0; i< length; i++) {
+        if (input[i] != input[length-i]) {
+            return false;
+        }
+    }
+   return true;
+}
+function sieve (highEnd) {
+    var sieve = newFilledArray(highEnd, true);
+    var maxCheck = Math.sqrt(highEnd);
+    var i, j;
+    var results = [];
+
+    for (i = 2; i <= maxCheck; i++) {
+        if (sieve[i] == true) {
+            for (j = i * i; j < highEnd; j += i) {
+                sieve[j] = false
+            }
+        }
+    }
+    for (i=2; i<highEnd; i++) {
+        if  (sieve[i]==true) {
+            results.push(i);
+        }
+    }
+    return(sieve);
+}
+function newFilledArray(length, val) {
+    var array = [];
+    for (var i = 0; i < length; i++) {
+        array[i] = val;
+    }
+    return array;
+}
+
+
+document.write(primePalindrome(112));
+ </script>

@@ -1,0 +1,62 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>JavaScript Assignment</title>
+</head>
+<body>
+ 
+
+
+
+<script>function factorial(n)
+{
+    let fact = 1;
+     
+    while (n != 0)
+    {
+        fact = fact * n;
+        n--;
+    }
+     
+    return fact;
+}
+ 
+function isKrishnamurthyNumber(n)
+{
+    let sum = 0;
+     
+   
+    let temp = n;
+     
+    while (temp != 0)
+    {
+         
+        
+        sum = sum + factorial(temp % 10);
+         
+       
+        temp = parseInt(temp / 10);
+    }
+  
+    return sum == n;
+}
+ 
+
+let n = 145;
+ document.write("The Number is a Krishnamurthy Number or not"+"<br>")
+ 
+if (isKrishnamurthyNumber(n))
+    document.write("YES");
+else
+    document.write("NO");
+ 
+/
+ 
+</script>
+</body>
+</html>

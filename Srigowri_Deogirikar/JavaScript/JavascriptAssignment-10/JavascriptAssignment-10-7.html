@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>JavaScript Assignment 10</title>
+</head>
+<body>
+    <script>
+        function is_alphaNumeric(str)
+{
+ regexp = /^[A-Za-z0-9]+$/;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+
+document.write(is_alphaNumeric("37828sad")+"<br>");
+
+document.write(is_alphaNumeric("3243#$sew")+"<br>");
+</script>
+</body>
+</html>

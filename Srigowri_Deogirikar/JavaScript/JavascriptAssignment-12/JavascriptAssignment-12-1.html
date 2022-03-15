@@ -1,0 +1,117 @@
+           
+<!Doctype html>
+
+<html>
+<head>
+    <title>Assignment 12</title>
+<script>
+
+class Employee {
+	constructor(name, age, salary) {
+	 this.name = name;
+	 this.age = age;
+	 this.salary = salary;
+	}
+}
+
+let emp = new Employee('adam', 34, 4567);
+document.write(emp.name());
+document.write(emp.employeeDetails());
+
+ 
+ let pattern = /^([A-Z][a-zA-Z]*)\s\-\s([1-9][0-9]*)\s\-\s([a-zA-Z0-9 -]+)$/g;
+
+ for (let arrS of arrStr) {
+     let matches = pattern.exec(arrS);//to get the information from the group(s) - returns an array with all the groups in the match
+
+     while (matches) {
+         document.write(`Name: ${matches[1]}`+"<br>");
+         document.write(`Position: ${matches[3]}`+"<br>");
+         document.write(`Salary: ${matches[2]}`+"<br>");
+         matches = pattern.exec(arrS);
+     }
+ }
+
+
+eD([
+ "Isaac - 1000 - CEO",
+ "Ivan - 500 - Employee dsdsd",
+ "Peter - 500 - Employee"
+]);
+
+
+
+
+function display()
+{
+var a=document.forms["pay"]["emp"].value;
+var b=document.forms["pay"]["dept"].value;
+var c=document.forms["pay"]["des"].value;
+var d=document.forms["pay"]["bs"].value;
+var e=document.forms["pay"]["hra"].value;
+var f=document.forms["pay"]["da"].value;
+var g=+d+ +e+ +f;
+document.write(a+ "<br>" +b+ "<br>" +c+ "<br>" +g);
+}
+var name ;
+        var salary ;
+        var da ;
+        var hra;
+        var pf ;
+       var  grossSal ;
+       var netSal;
+function calculate() {
+        da = Math.floor(salary * (15.0 / 100));
+        hra = Math.floor(salary * (10.0 / 100));
+        pf = Math.floor(salary * (12.0 / 100));
+        grossSal = salary + da + hra;
+        netSal = grossSal - pf;
+    
+  document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="Employee Name: "+name;
+       document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="Salary: "+salary;
+        document.getElementById("A").value;
+       document.getElementById("demo").innerHTML= "Dearness Allowance: "+da;
+      document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="House Rent Allowance: "+hra;
+        document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="Provident Fund: "+pf;
+      document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="Gross Salary: "+grossSal;
+        document.getElementById("A").value;
+       document.getElementById("demo").innerHTML="Net Salary: "+netSal;
+ 
+    
+}
+
+</script>
+</head>
+<body>
+<h1 text-align="Center">
+Payslip
+</h1>
+<form name="pay" method="post" onsubmit="display()">
+Name of Employee:<input type="text" name="emp"></input><br>
+Department:<input type="text" name="dept"></input><br>
+Designation:<input type="text" name="des"></input><br>
+Basic Salary:<input type="text" name="bs"></input><br>
+HRA:<input type="text" name="hra"></input><br>
+DA:<input type="text" name="da"></input><br>
+<input type="Submit"></input>
+</form>
+
+<label for="A">A</label>
+    <input type="text" id="A" name="" placeholder="">
+
+<button onclick="calculate('#p')">Calculate</button>
+
+
+
+<p id="demo"></p>
+</body>
+</html>
+
+      </script>
+    </body>
+</html>
