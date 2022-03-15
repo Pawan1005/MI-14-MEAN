@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<h1 id="demo">Flowers</h1> 
+<img id="image"src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt=""height="300px"width="300px"><br>
+<button>Text Play</button><br>
+
+<img id="myImg" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" width="300" height="300">
+
+<br>
+<button onclick="myFunction1()">Image Change</button>
+<p class="image flex">
+    <img
+        src="https://www.cupitfood.com/wp-content/uploads/2018/08/wholesale-apples-1200x1200.png"
+        alt="character image"
+        class="images img"height="100px"width="100px"
+    />
+    <img
+        src="https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI="
+        alt="character image"
+        class="images img"height="100px"width="100px"
+    />
+    <img
+        src="https://5.imimg.com/data5/VY/QT/MY-51857835/banana-fruit-500x500.jpg"
+        alt="character image"
+        class="images img"height="100px"width="100px"
+    />
+</p>
+<script>
+    function myFunction() {
+      document.getElementById("demo").style.textAlign = "left";
+    }
+    document.getElementById("p1").innerHTML = "Apple";
+    document.getElementById("p2").innerHTML = "Orange";
+
+    document.getElementById("p3").innerHTML = "Banana";
+
+
+    function myFunction1() {
+  document.getElementById("p1").src = "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg";
+
+    }
+
+    const img = document.querySelector('.image');
+const image = new Image();
+image.src = "https://www.cupitfood.com/wp-content/uploads/2018/08/wholesale-apples-1200x1200.pngi";
+image.alt = 'character img';
+image.classList.add('images', 'img');
+
+const img = document.querySelector('.image');
+
+for (let i = 0; i < 3; i++) {
+  const image = new Image()
+  image.src = "https://www.cupitfood.com/wp-content/uploads/2018/08/wholesale-apples-1200x1200.png";
+  image.alt = 'character img';
+  image.classList.add('images', 'img');
+  img.appendChild(image);
+}
+
+
+    </script>
+    </body>
+    </html>

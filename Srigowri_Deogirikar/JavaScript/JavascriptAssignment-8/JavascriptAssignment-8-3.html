@@ -192,7 +192,11 @@ let name=prompt('Enter the number');
 
 
 
-if(name=='1'||name==null)
+switch(name==0){
+
+
+
+case 1:(name=='1'||name==null)
  { 
     let n = arr.length;
 
@@ -202,7 +206,7 @@ printArray(arr, n);
 break;
  }
 
- else if(name=='2'||name==null)
+case 2:(name=='2'||name==null)
  { 
     let n = arr.length;
     document.write("UnSorted array: \n");
@@ -216,7 +220,7 @@ break;
    
 
  
-else if(name=='3'||name3==null)
+case 3:(name=='3'||name3==null)
  { 
     let n = arr.length;
     selectionSort(arr, n);
@@ -226,7 +230,7 @@ else if(name=='3'||name3==null)
  }
 
 
-else(name4=='4'||name4==null)
+case 4:(name4=='4'||name4==null)
  { 
     let n = arr.length;
     insertionSort(arr, n); 
@@ -234,6 +238,7 @@ else(name4=='4'||name4==null)
     break;
  }
   }
+}
 </script>
 
 </body>
