@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 9 -Q2</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">To Check number is Prime Palindrome </h3>
+        <input type="text" id="num">
+        <button type="button" onclick="check()">check</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <script>
+            function check() {
+                let rem, rev = 0, sum = 0;
+                var no = document.getElementById("num").value;
+                no = parseInt(no);
+                let n = no;
+                document.getElementById("demo").innerHTML = "The number is : " + no;
+
+                while (no != 0) {
+                    rem = no % 10;
+                    sum = sum + rem;
+                    rev = (rev * 10) + rem;
+                    no = no / 10;
+                    no = parseInt(no);
+                }
+                document.getElementById("demo1").innerHTML = "The reverse of number : " + rev;
+                if (n == rev) {
+                    document.getElementById("demo2").innerHTML = "This is Palindrome number  " + rev;
+
+                }
+                else  
+                 {
+                        document.getElementById("demo2").innerHTML = "This is not Palindrome number " + rev;
+
+                    }
+                 if (n % 2 == 0) {
+                        document.getElementById("demo3").innerHTML = "This is not Prime Palindrome number  " + rev;
+                    }
+                    else {
+                        document.getElementById("demo3").innerHTML = "This is  Prime Palindrome number  " + rev;
+
+
+                    }
+            }
+
+        </script>
+    </body>
+</html>

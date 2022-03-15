@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 12 -Q1</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Employee Class</h2>
+        
+        <script>
+            class Employee
+               {
+                   constructor(eno,name,add,city,sal)
+                   {
+                       this.empno=eno;
+                       this.name=name;
+                       this.address=add;
+                       this.city=city;
+                       this.salary=sal;
+                                             
+                   }
+                   calculate()
+                   {
+                       this.da=((30/100) * this.salary);
+                       this.hra=((15/100) * this.salary);
+                       this.pf=((12.5/100) * this.salary);
+                       this.gross= (this.da) + (this.hra) ;
+                       this.net=(this.gross) - (this.pf);
+                       if(E.net>180000)
+                        {
+                                alert("Income Tax Payer");                            
+                        }
+                        else
+                        {
+                                alert("Not an income tax payer.");
+                        }
+                       return this.da,this.hra,this.pf,this.gross,this.net;
+                   }  
+                }
+                let E=new Employee("101","Ashok Kumar","43,Ramnage","Pune,Maharashtra","80000");
+            
+                E.calculate()
+                        document.write("Employee no = "+E.empno+"<br>");
+                        document.write("Employee name = "+E.name+"<br>");
+                        document.write("Employee Address = "+E.address+"<br>");
+                        document.write("Employee city = "+E.city+"<br>");
+                        document.write("Employee Salary = "+E.salary+"<br><br>");
+                       
+                        document.write("Employee da = "+E.da+"<br>");
+                        document.write("Employee hra = "+E.hra+"<br>");
+                        document.write("Employee pf = "+E.pf+"<br>");
+                        document.write("Employee gross = "+E.gross+"<br>");
+                        document.write("Employee net = "+E.net+"<br>");
+        </script>
+    </body>
+</html>

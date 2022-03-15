@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 9 -Q3</title>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;"> Displaying Prime Palindrome numbers </h2>
+
+        <script>
+            let narr = [];
+            for (let i = 0; i < 5; i++) {
+                var no = prompt("Enter the 5 number");
+                narr[i] = no;
+            }
+            document.write("The no is ==> " + narr + "<br>");
+            var p = prime(narr);
+            document.write("The Prime no is ==> " + p + "<br>");
+            let p1 = Palindrome(p);
+            document.write("The palindrom no is ==> " + p1 + "<br>");
+            function prime(arr) {
+                const no1 = [];
+                for (let i = 0; i < 5; i++) {
+                    if (arr[i] % 2 != 0) {
+
+                        no1[i] = arr[i];
+                    }
+                }
+                return no1;
+            }
+
+            function Palindrome(arr) {
+                let rem, rev = 0;
+                let n = arr;
+                for (let i = 0; i < arr.length; i++) {
+                    while (arr[i] != 0) {
+                        rem = arr[i] % 10;
+                        rev = (rev * 10) + rem;
+                        arr[i] = arr[i] / 10;
+                        arr[i] = parseInt(arr[i]);
+                    }
+                    let p1 = [];
+                    if (n[i] == rev) {
+                        p1[j] = rev;
+                    }
+                }
+                return p1;
+            }              
+        </script>
+    </body>
+</html>

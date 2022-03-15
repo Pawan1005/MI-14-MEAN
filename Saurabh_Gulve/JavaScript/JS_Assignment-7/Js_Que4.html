@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 7 - Q4</title>
+    </head>
+    <body>
+        <h3> Diplaying Student Marks </h3> <br>
+        <button onclick="myFunc()"> Click to Enter values </button>
+        
+        <script>
+            function myFunc() {
+                var studentno = prompt("Enter for how many student you want to enter the marks");
+               
+                document.write("Total student number is : " + studentno + "<br><br>");
+                const markarr = [];
+                var arr1 = [];
+                for (let s = 1; s <= studentno; s++) {
+                    markarr[s] = addmark();
+                }
+                //before  sorting
+                document.write("---- Before Sorting ---- <br><br>");
+                for (let d = 1; d <= studentno; d++) {
+                    document.write("Student No " + d + " : " + markarr[d] + "<br>");
+                }
+
+                document.write("<br>");
+
+                // after sorting
+                document.write("---- After Sorting(Selection Sort )---- <br><br>");
+                for (let s1 = 1; s1 <= studentno; s1++) {
+                    arr1[s1] = selectionsort(markarr[s1]);
+                }
+                   
+                for (let d = 1; d <= studentno; d++) {
+                    document.write("Student No " + d + " : " + arr1[d] + "<br>");
+                }
+
+                document.write("<br>");
+
+                // addmark
+                function addmark() {
+                    const submark = [];
+                    for (let j = 0; j < 4; j++) {
+                        var mark = prompt("Enter the 4 subject marks ");
+                        submark[j] = mark;
+
+                    }
+
+                    return submark;
+                }
+                //selection sort
+
+
+                function selectionsort(arr) {
+                    let min;
+                    for (let i = 0; i < arr.length - 1; i++) {
+                        min = i;
+                        for (let j = i + 1; j < arr.length; j++) {
+                            if (arr[j] < arr[min]) {
+                                min = j;
+                            }
+                        }
+                        if (min !== i) {
+                            let temp;
+                            temp = arr[i];
+                            arr[i] = arr[min];
+                            arr[min] = temp;
+                        }
+
+                    }
+                    return arr;
+                }
+
+            }
+        </script>
+    </body>
+</html>

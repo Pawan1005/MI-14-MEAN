@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 10 -Q3</title>
+    </head>
+    <body>
+        <h3>Check valid Credit Number</h3><br>
+        <label> Enter Number : </label>   
+        <input type="text" id= "first"> <br> <br>  
+        <button onclick="mail_valid()"> Submit</button>
+        <div id="valid"></div>
+        <div id="invalid"></div>
+
+        <script>        
+          function mail_valid()
+            {
+                var username = document.getElementById ("first").value;                         
+
+                var mail_id = /^[a-z A-Z 0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z A-Z 0-9 -]+(?:\.[a-z A-Z 0-9 -]+)*$/;
+
+                if(mail_id.test(username))
+                {
+                   document.getElementById('valid').innerHTML = "<br> Valid Mail Id";
+                }
+                else
+                {
+                    document.getElementById('invalid').innerHTML = "<br> Invalid Mail Id";
+                }
+            }  
+        </script>  
+    </body>
+</html>

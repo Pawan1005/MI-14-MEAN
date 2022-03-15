@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 10 -Q1</title>
+    </head>
+    <body>
+        <h3>Check first character is uppercase or not</h3><br>
+        <label> Enter your string : </label>   
+        <input type="text" id= "first"> <br> <br>  
+        <button onclick="upper_case()"> Submit</button>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+
+        <script>        
+            function upper_case() 
+            {
+                var str = String(document.getElementById ("first").value);
+                regexp = /[A-Z]/;
+                if (regexp.test(str)) {
+                    document.getElementById('demo').innerHTML = "<br> String's first character is Uppercase";
+                } else {
+                    document.getElementById('demo').innerHTML = "<br> String's first character is not Uppercase";
+                }
+                }
+                
+        </script>  
+    </body>
+</html>

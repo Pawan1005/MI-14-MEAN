@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="text-align: center;">Displaying 10 Student subject marks</h2>
+    <input type="text" id="rno" >
+    <button type="button" onclick="show()">Show</button>
+    <p id="demo"></p>
+    <p id="demo"></p>
+   
+    <script>
+      const srollno = [];
+      for (let j = 0; j < 10; j++) {
+        var rollno = prompt("Enter the 10 student Roll No : ");
+        srollno[j] = rollno;
+      }
+
+      const submark = [];
+      for (let j = 0; j < 10; j++) {
+        var mark = prompt("Enter the 10 subject marks out of 50 : ");
+        submark[j] = mark;
+        if (mark > 50) {
+          alert("Do not enter above 50 marks ");
+          submark[j] = 0;
+        }
+      }
+
+      for (let i = 0; i < 10; i++) {
+        document.write("RollNo " + srollno[i] + " : " + submark[i] + "<br>");
+      }
+      document.write("<br>");
+
+      //add 20% mark each subject;
+
+      const sum = [];
+      for (let k = 0; k < 10; k++) {
+        sum[k] = (20 / 100) * submark[k] + parseInt(submark[k]);
+      }
+      document.write("Total Marks : 20% of marks out of 80 <br>");
+
+      for (let s1 = 0; s1 < 10; s1++) {
+        document.write("Roll No " + srollno[s1] + " : " + Math.floor(sum[s1]) + "<br>");
+      }
+      document.write("<br>");
+
+      function show() {
+        var rno2 = document.getElementById("rno").value;
+        document.getElementById("demo").innerHTML = rno2;
+
+        for (let i = 0; i < 10; i++) {
+          if (rno2 == srollno[i]) {
+            document.getElementById("demo1").innerHTML = "RollNo : " + srollno[i] + " has scored " + submark[i] + " marks <br>";
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>

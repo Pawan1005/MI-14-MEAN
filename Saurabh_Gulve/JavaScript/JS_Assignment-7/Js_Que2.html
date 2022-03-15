@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 7 - Q2</title>
+    </head>
+    <body>
+        <h3> Diplaying Student Marks </h3> <br>
+        <button onclick="myFunc()"> Click to Enter values </button>
+
+        <script>
+            function myFunc(){
+                var stud_num = prompt("Enter how many students you wants to enter the marks : ");
+                    
+                document.write("Total student number is : " + stud_num + "<br> <br>");
+        
+                const stud_marks = [];
+                    
+                for(let s=1; s<=stud_num; s++)
+                {
+                    stud_marks[s] = addmark();
+                        
+                }
+                for(let s1=1; s1<=stud_num; s1++)
+                {
+                    document.write("Marks of Student No "+ s1 + " : "+ stud_marks[s1] + "<br>");
+                }        
+                document.write("<br>");
+                
+                function addmark()
+                {
+                    const sub_marks=[];
+                    for(let j=0; j<=0; j++)
+                    {
+                        var mark=prompt("Enter the subject marks: ");
+                        sub_marks[j]=mark;
+                    }
+                    return sub_marks;
+                }  
+            }              
+        </script>
+    </body>
+</html>

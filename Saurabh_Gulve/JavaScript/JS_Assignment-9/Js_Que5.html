@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 9 -Q5</title>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Finding Double Letters Count</h2>
+        <div id="demo"></div>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        
+        <script>
+            let str = prompt("Enter the string");
+            document.getElementById('demo').innerHTML = " The input string : " + str + "<br>";
+            let char = prompt("which charecter u serach");
+            document.getElementById('demo1').innerHTML = "You entered to search for a character  " + char + "<br>";
+            let c = 0;
+            for (let i = 0; i < str.length; i++) {
+
+                if (char == str[i]) {
+                    c++;
+                }
+            }
+            document.getElementById('demo2').innerHTML = "The Charecter comes " + c + " times ";       
+        </script>
+    </body>
+</html>
