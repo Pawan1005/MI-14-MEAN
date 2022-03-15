@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 9 -Q1</title>
+    </head>
+    <body>
+        <input type="text" id="first" placeholder="Enter a number">
+        <button onclick="palindrome ()" >Submit</button>
+        <div id="demo" ></div>
+        <script>
+            function palindrome()
+            {
+                var a,n,r = 0;
+                n = parseInt(document.getElementById ("first").value);
+                n1 = n;
+                while(n > 0)
+                {
+                    a = n%10;
+                    n = parseInt(n/10);
+                    r = r*10+a;
+                }
+                if(n1 == r)
+                {
+                    document.getElementById ("demo").innerHTML = "<br>" + r + " is a Palindrome ";
+                }
+                else
+                {
+                    document.getElementById("demo").innerHTML = "<br>" + r + " is not a Palindrome ";
+                }
+            }
+        </script>
+    </body>
+</html>

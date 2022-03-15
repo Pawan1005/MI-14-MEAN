@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 8 -Q4</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Merge Section A and Section B using Merge Sort </h2>
+  
+        <script>
+            let Aarr = secA();
+            var Barr = secB();
+            document.write("Marks of students from Section A : " + Aarr + "<br>");
+            document.write("Marks of students from Section B : " + Barr + "<br><br>");
+
+            const addsort = Aarr.concat(Barr);
+            document.write("Marks of students from both sections : " + addsort + "<br>");
+            let addsort1 = mergesort(addsort);
+            document.write("Sorting the Marks of students Using Merge sort : " + addsort1 + "<br>");
+
+            function secA() {
+                var ano = prompt("Enter the how many student in A section");
+                const marr = [];
+                for (let i = 0; i < ano; i++) {
+                    marr[i] = addmark();
+
+                }
+                return marr;
+            }
+            function secB() {
+                var bno = prompt("Enter the how many student in B section");
+                const marr1 = [];
+                for (let j = 0; j < bno; j++) {
+                    marr1[j] = addmark();
+
+                }
+                return marr1;
+            }
+            function addmark() {
+                const markarr = [];
+                for (let i = 0; i < 1; i++) {
+                    var mark = prompt("Enter the 2 digit mark");
+                    markarr[i] = mark;
+                }
+                return markarr;
+            }
+
+            // Merge Sort
+            function mergesort(arr) {
+                if (arr.length <= 1)
+                    return arr;
+                let mid = Math.floor(arr.length / 2);
+                let left = mergesort(arr.slice(0, mid));
+                let right = mergesort(arr.slice(mid));
+
+                return merge(left, right);
+            }
+            
+            function merge(arr1, arr2) {
+                let result = [];
+                let i = 0, j = 0;
+                while (i < arr1.length && j < arr2.length) {
+                    if (arr1[i] < arr2[j]) {
+                        result.push(arr1[i]);
+                        i++;
+                    }
+                    else {
+                        result.push(arr2[j]);
+                        j++;
+                    }
+                }
+                while (i < arr1.length) {
+                    result.push(arr1[i]);
+                    i++;
+                }
+                while (j < arr2.length) {
+                    result.push(arr2[j]);
+                    j++;
+                }
+                return result;
+            }
+        </script>
+    </body>
+</html>
