@@ -1,0 +1,35 @@
+<html>
+    <!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript </title>
+        
+    </head>
+    <body>
+        
+           <lable for="Temp" >Temp:</lable>
+           <input type="text" id="Temp"><sup>o</sup>c
+         
+        
+        <button type="button" onclick="convert()">Convert</button>
+        <h3>After Conversion</h3>
+        <p id="demo"></p>
+        
+       <script type='text/javascript'>
+
+            function convert()
+            {
+           
+                var a=parseInt(document.getElementById("Temp").value);
+                    
+                 var c=(a * 9/5) + 32;
+                  
+                  document.getElementById("demo").innerHTML = +a + "<sup>0</sup>c is Equle to  " +c + "<sup>0</sup>Fs"; 
+                }
+          
+        </script>
+    </body>
+</html>
