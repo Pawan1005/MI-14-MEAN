@@ -1,0 +1,62 @@
+<html>
+    <!DOCTYPE html>
+<html lang="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript </title>
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body>
+        <h3>Check Armstorng number</h3>
+         <input type="text" id="text">
+         <button type="button" onclick="armstorng()">Check</button>
+         <p id="demo"></p>
+         <p id="demo1"></p>
+         <p id="demo2"></p>
+
+         <script>
+             function armstorng()
+             {
+                 var a, x,sum=0,cub=0;
+                 var no=parseInt(document.getElementById("text").value);
+                //  document.getElementById("demo").innerHTML="The number is =>" +no;
+                   n=no;
+                while(no>0)              
+                  {
+                      x = no % 10;
+                      cub = x * x * x;
+                      sum = sum + cub;
+                      no =no / 10;
+                      no=parseInt(no);
+                  
+                  }
+                  document.getElementById("demo1").innerHTML="The adddition is"+sum;
+
+                  if ( n == sum)
+                 {
+                      document.getElementById("demo2").innerHTML="This is Armstorng "+n;
+                 }
+                  else
+                 {
+                       document.getElementById("demo2").innerHTML="This is not Armstorng "+n;
+                      
+                  }
+
+             }
+         </script>
+    </body>
+    </html>
+    
