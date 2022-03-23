@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Javascript </title>
+    </head>
+    <body>
+        <h3> Student Marks==>   </h3>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+                var studentno=prompt("Enter the how many student enter the marks ==>");
+                
+                 document.write("Total student number is => "+studentno+"<br>");
+    
+                  const markarr=[];
+                
+                for(let i=0; i<studentno; i++)
+                {
+                     markarr[i]=addmark();
+                    
+                }
+                for(let j=0; j<studentno; j++)
+                {
+                       document.write("Marks "+j+ "="+markarr[j]+"<br>");
+                }        
+                document.write("<br>");
+                
+                 function addmark()
+                 {
+                    const submark=[];
+                    for(let k=0; k<1; k++)
+                     {
+                         var mark=prompt("Enter the 5 subject marks =>");
+                         submark[k]= mark;
+                      }
+                      return submark;
+                  }
+      </script>
+  </body>
+</html>
+    

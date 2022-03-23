@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <body>
+            <center>
+                <h1> Vowel or consonant </h1>
+                <hr class="Green">
+                <p>Enter the Character: <input id="char"><button onclick="checkVowel()">Check</button></p>
+                <p id="resPara" style="display:none;">It is <span id="res"></span></p>
+            </center>
+        </body>
+            <script>
+                var ch;
+                function checkVowel()
+                {
+                  ch = document.getElementById("char").value;
+                  switch(ch)
+                  {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'A':
+                    case 'E':
+                    case 'I':
+                    case 'O':
+                    case 'U':
+                    document.getElementById("res").innerHTML = "a Consonant";
+                    break;
+                    default:
+                    document.getElementById("res").innerHTML = "neither Vowel nor Consonant";
+                    break;
+                  }
+                }
+            </script>
+    </head>
+    </html>

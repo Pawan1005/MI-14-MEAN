@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article - Number pattern 1</title>
+</head>
+
+<body>
+  <h2>Number pattern using javascript</h2>
+  <input type="text" id="num1" placeholder="Number">
+         
+         <button type="button" onclick="Pyramid()">Check</button>
+  <script>
+    function Pyramid()
+             {
+                 let a=1;
+                 let num1= document.getElementById("num1").value;
+                no1=parseInt(num1);
+                 
+                 document.write("The input no is "+num1+"<br>");
+
+                 document.write(a+"<br>");
+                for (let i=1; i<num1; i++)
+                {
+                    
+                     for(let j=1; j<=i; j++)
+                     {
+                         document.write(j);
+                                             
+                     }
+                     document.write(a);
+                     
+                     document.write("<br>");
+
+                 }
+             }
+  </script>
+</body>
+</html>

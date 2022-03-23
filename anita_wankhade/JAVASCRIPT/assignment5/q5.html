@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Floyd's Triangle Number in JavaScript</title>
+    </head>
+    <body>
+        <center>
+            <h1>Floyd's Triangle</h1>
+    </body>
+    <script>
+        let i,j,k=1,n=4,string=""
+            
+            for(i=1; i<=n; i++)
+            {
+                for(j=1; j<=i; j++,k++)
+                {
+                    string=string+k
+                }
+               string=string+"<br>"
+            }
+            document.write(string);
+    </script>
+    </center>
+</html>
+    

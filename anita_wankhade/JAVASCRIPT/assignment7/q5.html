@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results in JavaScript</title>
+</head>
+<body>
+    <h3>Show Student marks==>   </h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+            var studentno=prompt("Enter the how many student enter the marks ==>");
+            document.write("Total student number is ==> "+studentno+"<br>");
+              const markarr=[];
+            var arr1=[];
+            for(let s=0; s<studentno; s++)
+            {
+                 markarr[s]=addmark();
+                
+            }
+            //befor  sorting===
+              document.write("=====Befor Sorting==== <br><br>");
+            for(let d=0; d<studentno; d++)
+            {
+                  document.write("student no "+d+ "==>"+markarr[d]+"<br>");
+            }       
+             
+            document.write("<br>");
+
+            // after sorting===
+            document.write("=====After Sorting(insertion  sort )==== <br><br>");                
+            for(let s1=0; s1<studentno; s1++)
+            {
+                    arr1[s1]=insertionsort(markarr[s1]);
+            }       
+         //  document.write(arr1);   
+           for(let d=0; d<studentno; d++)
+            {
+                  document.write("student no "+d+ "==>"+arr1[d]+"<br>");
+            }       
+             
+            document.write("<br>");
+            ///addmark
+             function addmark()
+             {
+                const submark=[];
+                for(let j=0; j<5; j++)
+                 {
+                     var mark=prompt("Enter the 5 subject marks==>");
+                     submark[j]=mark;
+
+                 }
+               
+                 return submark;
+              }
+              //insertion  sort
+              
+
+             function insertionsort(arr)
+             {
+                 
+                 for(let i=1; i< arr.length; i++)
+                 {
+                    
+                    for(let j=i-1; j>-1; j--)
+                    {
+                        if(arr[j+1] < arr[j])
+                        {
+                            let temp;
+                            temp = arr[j+1];
+                            arr[j+1] = arr[j];
+                            arr[j] =temp;
+                        }
+                    }
+                  
+                    
+                 }
+                     return arr;
+             }
+
+             
+     </script>
+</body>
+</html>

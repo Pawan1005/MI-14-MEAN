@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Even and odd Number in JavaScript</title>
+    </head>
+    <style>
+        .results{
+                    border : green 1px solid;
+                    background-color : aliceblue;
+                    text-align : left;
+                    padding-left : 20px;
+                    height : 300px;
+                    width : 95%;
+                }
+        .resultText {
+                       font-size : 20px;
+                       font-style : normal;
+                       color : blue;
+                    }
+        </style>
+        <body>
+            <div class = "results">
+            <h2> Enter the Number </h2>
+            Number: <input type = "number" name = "number"  required id = "first">
+            <button type = "button" onclick = "sum_product()" > check </button>
+            <div class = "resultText">
+            <div id = "num"> </div>
+            <div id = "num1"></div>
+            </div>
+        <script>
+            function sum_product()
+            {
+                var r,n,sum=0,product=1;
+                n= parseInt(document.getElementById("first").value);
+                n1 = n;
+                while(n>0){
+                    r=n%10;
+                    if(r%2==0){
+                        sum=sum+r;
+                    }
+                    else{
+                        product=product*r;
+                    }
+                    n=parseInt(n/10);
+                }
+                document.getElementById("num").innerHTML="sum of even digit:"+sum;
+                document.getElementById("num1").innerHTML="sum of odd digit:"+product;
+
+            }
+        </script>
+        </body>
+        </html>
