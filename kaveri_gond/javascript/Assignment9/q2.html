@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>Whether a number is prime Palindrome or not</h3>
+        Enter The Number :<input type="text" name="n" id = "N"/>
+        <button onClick="primePalindrome()">CHECK</button>
+
+        <script>
+			function primePalindrome()
+			{
+				var rem, temp, final = 0;
+				var number = Number(document.getElementById("N").value);
+				var c =0 ;
+                temp = number;
+
+				for(let i=1; i<=number; i++){
+					if(number%i == 0);
+					c++;
+				}
+				if(c==2)
+				temp = number;
+				while(temp>0)
+				{
+					rem = temp%10;
+                    temp = parseInt(temp/10);
+					final = final*10+rem;
+				}
+				if(final === number )
+				{
+					window.alert("The inputed number is prime Palindrome");
+				}
+				else
+				{
+					window.alert("The inputted number is not prime palindrome");
+				}
+			}
+        
+			
+		</script>
+        
+    </body>
+</html>

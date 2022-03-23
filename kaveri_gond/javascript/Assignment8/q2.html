@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>Marks of students score</h3>
+        <P id="demo"></p>
+
+        <script> 
+         const arr = [];
+         for(let i=1; i<=10; i++){
+             
+           var mark = parseInt(prompt("Enter the marks of 10 subject "));
+           if(mark>80){
+               alert("Marks should be less than 80");
+               continue;
+           }
+           arr[i] = mark;
+         }
+         document.getElementById("demo").innerHTML ="Marks of 10 subject" +" " +arr;
+
+         for(let i=1; i<arr.length; i++){
+
+            for(let j=0; j<1; j++){
+                num1 = arr[i];
+            document.write("Subject"+" " +i+ "=" +" " +num1 +"<br>");
+            }
+            }
+            document.write("<br>"+"**** Internal Marks ****");
+            for(let i=1; i<arr.length; i++){
+                 arr1 = arr[i];
+                 intmak = Math.round(1/5*arr[i]);
+                 document.write("<br>"+"Subject "+" " +i+ "="+ " " +intmak +"<br>");
+            }
+
+            document.write("<br>"+"**** TOTAL MARKS ****");
+            for(let i=1; i<arr.length; i++){
+                mar = arr[i];
+                totalmak = Math.ceil(arr[i]+(1/5*arr[i]));
+
+                document.write("<br>"+"Subject "+" " +i+ "="+ " " +totalmak +"<br>");
+            }
+            document.write("<br>"+"**** QUICK SORT ****");
+             const arr2 = [];
+             for(let i=1; i<=10; i++){
+                 arr2[i] = totalmak = Math.ceil(arr[i]+(1/5*arr[i]));
+             }
+
+            function swap(arr2, leftIndex, rightIndex){
+                    var temp = arr2[leftIndex];
+                    arr2[leftIndex] = arr2[rightIndex];
+                    arr2[rightIndex] = temp;
+                }
+                function partition(arr2, left, right) {
+                    var pivot   = arr2[Math.floor((right + left) / 2)], //middle element
+                        i       = left, //left pointer
+                        j       = right; //right pointer
+                    while (i <= j) {
+                        while (arr2[i] < pivot) {
+                            i++;
+                        }
+                        while (arr2[j] > pivot) {
+                            j--;
+                        }
+                        if (i <= j) {
+                            swap(arr2, i, j); //sawpping two elements
+                            i++;
+                            j--;
+                        }
+                    }
+                    return i;
+                }
+
+                function quickSort(arr2, left, right) {
+                    var index;
+                    if (arr2.length > 1) {
+                        index = partition(arr2, left, right); //index returned from partition
+                        if (left < index - 1) { //more elements on the left side of the pivot
+                            quickSort(arr2, left, index - 1);
+                        }
+                        if (index < right) { //more elements on the right side of the pivot
+                            quickSort(arr2, index, right);
+                        }
+                    }
+                    return arr2;
+                }
+                // first call to quick sort
+                var sortedArray = quickSort(arr2, 0, arr2.length - 1);
+
+               document.write("<br>"+"Sorted array for total number ="+" "+sortedArray);
+                        
+            </script>  
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        
+        <textarea id="InputText" cols="30" rows="4">The quick brown fox jumps over the lazy dog.</textarea>
+        <br>
+        <input type="button" name="Convert" value="No. of Words" onClick="myfunct();">
+        <input id = "demo" type="text" value="" size="6"> 
+
+        <script>
+            function myfunct()
+                    {
+                    str1= document.getElementById("InputText").value;
+                    //exclude  start and end white-space
+                    str1 = str1.replace(/(^\s*)|(\s*$)/gi,"");
+                    //convert 2 or more spaces to 1  
+                    str1 = str1.replace(/[ ]{2,}/gi," ");
+                    // exclude newline with a start spacing  
+                    str1 = str1.replace(/\n /,"\n");
+                    document.getElementById("demo").value = str1.split(' ').length;
+                    }
+                                
+     
+     
+    
+       </script>  
+    </body>
+</html>

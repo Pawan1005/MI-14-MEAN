@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>Marks of students score</h3>
+        <P id="demo"></p>
+        <P id="demo1"></p><br><br>
+        <p> 1)Bubble sort (Press 1) </p><br>
+        <p> 2)Insertion sort (Press 2)</p> <br> 
+        <p>3)Selection sort (Press 3)</p> <br> 
+        <p> 4)Quick sort (Press 4)</p> <br>
+        <p> 5)Exit 0r (Press 5)</p> <br>   
+         <button type="button" onclick="myfunct()">Choose the method </button><br><br>
+
+        <script> 
+         const arr = [];
+         for(let i=1; i<=10; i++){
+             
+           var mark = parseInt(prompt("Enter the marks of 10 subject "));
+           if(mark>80){
+               alert("Marks should be less than 80");
+               continue;
+           }
+           arr[i] = mark;
+         }
+         document.getElementById("demo").innerHTML ="Marks of 10 subject" +" " +arr;
+
+         for(let i=1; i<arr.length; i++){
+
+            for(let j=0; j<1; j++){
+                num1 = arr[i];
+            document.write("<br>"+"Subject"+" " +i+ "=" +" " +num1 +"<br>");
+            }
+            }
+            document.write("<br>"+"**** Internal Marks ****");
+            for(let i=1; i<arr.length; i++){
+                 arr1 = arr[i];
+                 intmak = Math.round(1/5*arr[i]);
+                 document.write("<br>"+"Subject "+" " +i+ "="+ " " +intmak +"<br>");
+            }
+
+            document.write("<br>"+"**** TOTAL MARKS ****");
+            for(let i=1; i<arr.length; i++){
+                mar = arr[i];
+                totalmak = Math.ceil(arr[i]+(1/5*arr[i]));
+
+                document.write("<br>"+"Subject "+" " +i+ "="+ " " +totalmak +"<br>");
+            }
+           
+            function myfunct(){
+                let text;
+                let method = prompt("choose the key");
+                switch (method){
+                    case "1":
+                        text = "Bubble sort "; 
+                        break;
+                   case "2":
+                        text = "Insertion sort "; 
+                        break; 
+                   case "3":
+                        text = "Selection sort "; 
+                        break; 
+                    case"4":
+                        text = "Quick sort "; 
+                        break; 
+                    default:
+                        text = "No key press"
+                        break;
+                }
+                document.getElementById("demo1").innerHTML = text;
+            } 
+           
+        </script>   
+    </body>
+</html>

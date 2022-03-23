@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+    <body>
+        <h3>Enter the numbers</h3>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        
+        <script>
+            const array = [];
+           
+
+            for (let i = 0; i<=5; i++ ){
+                var number = prompt("Enter five number");
+                array [i] = parseInt (number);
+                if(number == "x" || number == null ){
+                  document.write ("null");  
+                    break;
+                }else{
+                    //document.write("cancle");
+                   // break;
+                }
+
+            }
+            document.getElementById("demo").innerHTML = array;
+            let total;
+            let sum =0;
+            for(let i=0; i<array.length - 1; i++){
+
+                 sum += array[i];
+            }
+           document.getElementById("demo1").innerHTML = "the sum of number =" +sum;
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>
