@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Assignment 19 - Q1</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Displaying the table</h2><br>
+        <label for="number">Enter a number : </label>
+        <input type="text" id="num"><br><br>
+        <button onclick="table()">Create a Table</button> <br><br>
+        <div id="demo"></div>
+
+        <script>
+            function table(){
+                var num = Number(document.getElementById('num').value);
+                var regexp = /\d/;
+                if (regexp.test(num)) {
+                    alert("It is a Valid number");
+                } 
+                else {
+                    alert("It is not a number....Enter a valid number");
+                }
+                for(let i=1; i<=10; i++){
+                    var result = num * i + "<br>";
+                    document.getElementById("demo").innerHTML += num + " * " + i + " = " + result;  
+                }   
+            }
+        </script>
+    </body>
+</html>
