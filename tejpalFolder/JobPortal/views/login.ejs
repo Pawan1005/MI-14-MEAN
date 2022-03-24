@@ -1,0 +1,32 @@
+<html>
+<head>
+<%- include('header',{
+    title:'Login'
+}); -%>
+
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form action="" method="POST">
+        <div class="mb-3">
+            <label for="user_email">Email</label>
+            <input type="email" class="input" name="_email" id="user_email" placeholder="Enter your email">
+        </div>
+    
+        <div class="mb-3">
+            <label for="user_pass">Password</label>
+        <input type="password" class="input" name="_password" id="user_pass" placeholder="Enter new password">
+        </div>
+        
+
+        <% if(typeof error !== 'undefined'){ %>
+        <div class="err-msg"><%= error %></div><% } %>
+
+        <input type="submit" value="Login">
+        <div class="link"><a href="./signup">Sign Up</a></div>
+
+    </form>
+</div>
+</body>
+</html>

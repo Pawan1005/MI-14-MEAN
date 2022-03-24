@@ -1,0 +1,53 @@
+
+<!DOCTYPE>
+<html>
+<head>
+  <%- include('header',{
+    title:'ContactUs'
+}); -%>
+</head>
+
+<body >
+
+  <%- include('menu')-%> 
+<!-- Page (2 columns) -->
+  <h1><center>ContactUs</center></h1>
+  <div class="container">
+    <form>
+      <div class="row">
+      <div class="col-4">
+        <label for="exampleInputText" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp">
+      </div>
+      
+      
+        <div class="col-4">
+      
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="col-4">
+      
+          <label for="exampleInputNumber" class="form-label">Contact No.</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-auto">
+          &nbsp
+          <button type="submit" class="btn btn-primary ">ContactUs</button>
+        </div>
+      </div>
+
+      
+    </form>
+  </div>
+ 
+<%- include('footer')-%>
+</div> <!-- /main -->
+
+
+</body>
+</html>
