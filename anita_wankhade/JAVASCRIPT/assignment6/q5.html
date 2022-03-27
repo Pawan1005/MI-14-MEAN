@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Addition for User Input in JavaScript</title>
+    </head>
+        <title> JavaScript Display Addition for User Input from an array. </title>
+    </head>
+    <body>
+        <font color="green">
+            <h1 align="center">Display Factorial Number</h1>
+        </font>
+        <p id ="demo"></p>
+        <p id ="demo1"></p>
+        <p id ="demo2"></p>
+    <script>
+        const array = [];
+            for(let i=1; i<=5; i++){
+            var num = prompt("Enter Number");
+            array[i]=num;
+            }
+            document.getElementById("demo").innerHTML = array;
+            const factorial = (num, fact = 1) => {
+                if(num){
+                    return factorial(num-1, fact*num);
+                };
+           
+                return fact; 
+            };
+            const factorialArray = array => array.map(element => factorial(element));
+            document.getElementById("demo1").innerHTML = "factorial array= "+(factorialArray(array));
+            document.getElementById("demo2").innerHTML = (factorialArray(array)).reverse();
+
+        </script>
+    </body>
+</html>

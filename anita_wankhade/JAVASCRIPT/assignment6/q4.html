@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Addition for User Input in JavaScript</title>
+    </head>
+        <title> JavaScript Display Addition for User Input from an array. </title>
+    </head>
+    <body>
+        <font color="green">
+            <h1 align="center">Display Factorial Number</h1>
+        </font>
+        <p id="demo"></p>
+        <script>
+            let sum=0;
+            const test=[];
+            for(let i=0;i<5;i++)
+            {
+              var no= prompt("Enter the number only 5");
+                test[i]=parseInt(no);
+               if (no==NaN)
+               {
+                   break;
+               }  
+
+            }
+            document.write("The List is==> "+test+"<br><br>");
+            
+          for(let j=0;j<5;j++)
+           {
+               
+           //    document.write("Name "+j+":"+test[j]+"<br>");
+             
+               document.write("Name "+j+":"+test[j]+"<br>");
+               
+           }
+
+            for(let i=0;i<5;i++)
+            {
+                sum = sum + parseInt(test[i]);
+            }
+            document.write("The Sum of array ==> "+sum+"<br>");
+            let fact=1;
+            for (let i=1;i<=sum; i++)
+            {
+                fact=fact*i;
+            }
+            document.write("The sum of factorial==>"+fact);
+               
+    </script>
+</body>
+</html>

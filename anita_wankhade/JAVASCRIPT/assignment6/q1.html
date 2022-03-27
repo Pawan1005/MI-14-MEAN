@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array using JavaScript </title> 
+</head> 
+<body>
+	<h3>Namelist </h3>
+	   <p id="demo"></p>
+	 <script>
+		const test=[];
+			for(let i=0;i>=0;i++)
+			 {
+				 var nm= prompt("Enter the name");
+				 test[i]=nm;
+				 if(nm=="x")
+			   {
+				   test[i]=null;
+				   break;
+			   }
+
+			 }
+			document.getElementById("demo").innerHTML="The input array ==> "+test;
+			for(let j=0;j<5;j++)
+			{
+				if(test[j]==NaN)
+				{
+					break;
+				}
+				document.write("Name "+j+":"+test[j]+"<br>");
+				
+			}
+		</script>
+	</body>
+</html>

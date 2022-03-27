@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+    <body>
+        <h3>Checking the sum of digits </h3>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            var a =  prompt("enter the number");
+            var first, last, middle, sum;
+            var len = a.length;
+            last = a%10;
+            x = parseInt(a/10);
+            middle = x%10;
+            y = parseInt(a/10);
+            first = parseInt(a/100);
+            sum = last + first;
+                if (len !== 3)
+                   {
+                        document.getElementById("demo").innerHTML = "Invalid Number!!Please enter a 3 digit no ." ;   
+                    }
+
+                else  if(sum == middle)
+                   {
+                        document.getElementById("demo1").innerHTML = "Sum match ." ;
+                    }
+                else 
+                   {
+                        document.getElementById("demo1").innerHTML = "Sum does not match ." ;   
+
+                    }
+    </script>
+</body>
+</html>

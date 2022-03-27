@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Subject Mark in JavaScript</title>
+    </head>
+    <body>
+        <h2>Enter Ten subject Number</h2>
+        <p id="demo"></p>
+                <script>
+                  const arr = [];
+                   for(let i=1; i<=10; i++)
+                      {
+                        var mark = parseInt(prompt("Enter the 10 subject marks =>"));
+                        if(mark>80){
+                          alert("Marks should be a less than 80");
+                          continue;
+                      } 
+                        arr[i]= mark;
+                      }
+                        document.getElementById("demo").innerHTML="***student Marks***"+" ";
+                        for(let i=1; i<arr.length; i++)
+                      {
+                       for(let j=0; j<1; j++)
+                      {
+                        num1=arr[i];
+                        document.write("Marks "+i+ "="+num1+"<br>");
+                      }
+                      }        
+                  //calculate totol scored in each subject
+                      document.write("***scored out of 80 as internal marks***<br>");
+                      for(let i=1; i<arr.length; i++)
+                     {
+                        arr1=arr[i];
+                        intmark=Math.round(20/100*arr[i]);
+                        document.write("Marks "+" "+i+ "=" +" " +intmark+ "<br>");
+                      }
+                     document.write("****Totol Marks****=><br>");
+                     for(let i=1; i<arr.length; i++)
+                      {
+                        sub2=arr[i];
+                        totalmark=Math.ceil(arr[i]+(20/100*arr[i]));
+                        document.write("Marks "+i+ "=" + " " +totalmark+ "<br>");
+                      }
+    </script>
+ </body>
+</html>

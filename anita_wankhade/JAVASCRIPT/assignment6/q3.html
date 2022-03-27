@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Addition for User Input in JavaScript</title>
+    </head>
+    <body>
+        <h3>Addition </h3>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+        <script>
+             const arr=[];
+             var sum=0;
+              for(let i=0; i<5; i++)
+              {
+                  var nm = prompt("Enter the number ");
+                   arr[i]=nm;
+                   if(nm == "x")
+                   { 
+                       
+                        break;
+                   }
+              }
+            //  document.write(arr);
+              document.getElementById("demo").innerHTML= "The Input Array is ==> "+arr;
+                for(let i=0;i<5;i++)
+                 {
+                     sum = sum + parseInt(arr[i]);
+                 }
+                // document.write(sum);
+                 document.getElementById("demo1").innerHTML="The Sum of array ==> "+sum;
+        </script>
+    </body>
+    </html>
