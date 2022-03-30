@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>SELECTION SORT METHOD</h3>
+        <p>******  Before sorting  ******</p>
+        <P id="demo"></P>
+
+        <script>
+             const std =  prompt("enter the number of students");
+                num = parseInt (std);
+            
+                const arr1 = [];
+            
+                for(let i =1; i<=num; i++){
+                    var marks =prompt("enter the marks of" +" "+std+ " " + "students .");
+                    arr1[i] = parseInt (marks);
+                    
+                }
+                document.getElementById("demo").innerHTML ="Marks of" +" " +num+ " "+"students"+" " +arr1;
+            
+                for(let i=1; i<arr1.length; i++){
+
+                for(let j=0; j<1; j++){
+                    num1 = arr1[i];
+                document.write("Marks"+" " +i+ " " +num1 +"<br>");
+                }
+                }
+         
+                document.write("<br>"+"******  After sorting(Selection Sort)  ******");
+                function insertionSort(arr1){
+                for(let i=1; i<arr1.length; i++ ){
+
+                    for(let j=i-1; j > -1; j--){
+                        
+                        if( arr1[j+1] < arr1[j] ){
+                            [arr1[j+1] ,arr1[j]] = [arr1[j], arr1[j+1]];
+                        }
+
+                    }
+                    
+                }return arr1;
+                }
+                arr2 = insertionSort(arr1);
+                for(let i=1; i<arr1.length; i++){
+
+                    for(let j=0; j<1; j++){
+                    num2 = arr2[i];
+                    document.write("<br>"+"Marks"+" " +i+ " " +num2 +"<br>");
+                    }
+                    }
+
+        </script>
+        
+    </body>
+</html>

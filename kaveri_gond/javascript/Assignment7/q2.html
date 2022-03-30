@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Mark of the students</h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
+    <script>
+       
+        const std =  prompt("enter the number of students");
+           num = parseInt (std);
+       
+        const arr1 = [];
+      
+        for(let i =1; i<=num; i++){
+            var marks =prompt("enter the marks of" +" "+std+ " " + "students .");
+            arr1[i] = parseInt (marks);
+            
+        }
+        document.getElementById("demo").innerHTML ="Marks of" +" " +num+ " "+"students"+" " +arr1;
+       
+          for(let i=1; i<arr1.length; i++){
+
+           for(let j=0; j<1; j++){
+            num1 = arr1[i];
+           document.write("Marks"+" " +i+ " " +num1 +"<br>");
+         }
+         }
+
+       
+    </script>
+</body>
+</html>

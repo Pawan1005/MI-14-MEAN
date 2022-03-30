@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>student marks</h3>
+        <P id="demo"></p>
+        <button type="button" onclick="sectionA()">Marks of section A </button><br><br><br>
+        <button type="button" onclick="sectionB()">Marks of section B </button>
+
+        <script>
+            function sectionA(){
+            const array1 =[];
+            for(i=1; i<=5; i++){
+                var sect1 = prompt("enter the marks for section A");
+                array1[i] = sect1;
+            }
+            document.write("Marks of students in section A =" +" "+array1);
+        }
+        function sectionB(){
+           const array2 =[];
+            for(i=1; i<=5; i++){
+                var sect2 = prompt("enter the marks for section B");
+                array2[i] = sect2;
+            }
+            document.write("Marks of students in section B =" +" "+array2);
+       
+        }
+               
+             
+            function merge(arr1, arr2) {
+                            let i = 0;
+                            let j = 0;
+                            let results = [];
+                    while(i < arr1.length && j < arr2.length) {
+                        if (arr2[j] > arr1[i]) {
+                        results.push(arr1[i]);
+                        i++;  
+                        }else {
+                        results.push(arr2[j]);
+                        }
+                    }
+                        while(i < arr1.length){
+                        results.push(arr1[i]);
+                        i++;
+                    }
+                        while(j < arr2.length){
+                        results.push(arr2[j]);
+                        j++;
+                    }
+                    return results;
+                    }
+       
+       
+                    function mergeSort(sect2){
+                                if (sect2.length <= 1) return sect2;
+                                
+                                let mid = Math.floor(sect2.length/2);
+                                let left = mergeSort(sect2.slice(0, mid));
+                                let right = mergeSort(sect2.slice(mid));
+                                return merge(left, right);
+                            }
+                        
+                    var array =  mergeSort(sect2);
+                    document.getElementById("demo").innerHTML = "Sorted array is = "+array;     
+                    
+        </script>
+        
+    </body>
+</html>

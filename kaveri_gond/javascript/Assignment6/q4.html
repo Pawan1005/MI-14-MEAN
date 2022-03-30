@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+    <body>
+        <h3>Enter the number</h3>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+           const arr = [];
+           var n= arr.length;
+            
+            for (let i = 1; i <= 5; i++) {
+                var num = prompt ("enter the number");
+                 arr [i] = num ; 
+            }
+           document.getElementById("demo").innerHTML = arr;
+
+                function factorial(num)
+                {
+                    let f = 1;
+                    
+            
+                    for(let i = 1; i <= num; i++)
+                    {
+                        f *= i;
+                    }
+                    return f;
+                }
+                
+                // Function to return the sum of
+                // factorials of the array elements
+                function sumFactorial(arr, num)
+                {
+                
+                    // To store the required sum
+                    let s = 0;
+                    for (let i = 1; i <= num; i++)
+                    {
+                        
+                        // Add factorial of all the elements
+                        s += factorial(arr[i]);
+                    }
+                    return s;
+                }
+                //document.write(sumFactorial(arr,n));
+                document.getElementById("demo1").innerHTML = "the sum of factorial is " +(sumFactorial(arr,num));
+
+        </script>
+        
+    </body>
+</html>
